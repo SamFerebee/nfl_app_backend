@@ -246,3 +246,243 @@ tightend_list.each do |te|
         image: te[:image]
     )
 end
+
+leftend_list =[
+    {
+      name: "J.J. Watt",
+      age: 32,
+      contract: "4,900,000",
+      position: "Left End",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13979.png",
+      strength: 92,
+      passrush: 86,
+      runstuff: 87   
+    }
+]
+
+leftend_list.each do |le|
+    Leftend.create(
+        name: le[:name],
+        age: le[:age],
+        contract: le[:contract],
+        position: le[:position],
+        image: le[:image],
+        strength: le[:strength],
+        passrush: le[:passrush],
+        runstuff: le[:runstuff]
+    )
+end
+
+
+rightend_list =[
+    {
+      name: "Myles Garret",
+      age: 25,
+      contract: "11,000,000",
+      position: "Right End",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3122132.png",
+      strength: 96,
+      passrush: 95,
+      runstuff: 89   
+    }
+]
+
+rightend_list.each do |re|
+    Rightend.create(
+        name: re[:name],
+        age: re[:age],
+        contract: re[:contract],
+        position: re[:position],
+        image: re[:image],
+        strength: re[:strength],
+        passrush: re[:passrush],
+        runstuff: re[:runstuff]
+    )
+end
+
+dtackle_list =[
+    {
+      name: "Aaron Donald",
+      age: 30,
+      contract: "26,100,000",
+      position: "Defensive Tackle",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16716.png&w=350&h=254",
+      strength: 99,
+      passrush: 99,
+      runstuff: 94   
+    }
+]
+
+dtackle_list.each do |p|
+    Dtackle.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        strength: p[:strength],
+        passrush: p[:passrush],
+        runstuff: p[:runstuff]
+    )
+end
+
+lolb_list =[
+    {
+      name: "T.J. Watt",
+      age: 27,
+      contract: "11,089,000",
+      position: "LOLB",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3045282.png",
+      strength: 88,
+      passrush: 97,
+      speed: 94  
+    }
+]
+
+lolb_list.each do |p|
+    Lolb.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        strength: p[:strength],
+        passrush: p[:passrush],
+        speed: p[:speed]
+    )
+end
+
+
+rolb_list =[
+    {
+      name: "Khalil Mack",
+      age: 30,
+      contract: "24,500,000",
+      position: "ROLB",
+      image: "https://a.espncdn.com/i/headshots/nfl/players/full/16710.png",
+      strength: 95,
+      passrush: 95,
+      speed: 90  
+    }
+]
+
+rolb_list.each do |p|
+    Rolb.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        strength: p[:strength],
+        passrush: p[:passrush],
+        speed: p[:speed]
+    )
+end
+
+mlb_list =[
+    {
+      name: "Bobby Wagner",
+      age: 31,
+      contract: "17,150,000",
+      position: "MLB",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14979.png",
+      speed: 92,
+      tackling: 99,
+      coverage: 92  
+    }
+]
+
+mlb_list.each do |p|
+    Mlb.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        tackling: p[:tackling],
+        coverage: p[:coverage],
+        speed: p[:speed]
+    )
+end
+
+
+cb_list =[
+    {
+      name: "Stephon Gilmore",
+      age: 31,
+      contract: "17,200,000",
+      position: "CB",
+      image: "https://a.espncdn.com/i/headshots/nfl/players/full/14942.png",
+      speed: 94,
+      mancoverage: 97,
+      zonecoverage: 95  
+    }
+]
+
+cb_list.each do |p|
+    Cb.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        zonecoverage: p[:zonecoverage],
+        mancoverage: p[:mancoverage],
+        speed: p[:speed]
+    )
+end
+
+ss_list =[
+    {
+      name: "Tyrann Mathieu",
+      age: 29,
+      contract: "19,700,000",
+      position: "SS",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15851.png",
+      speed: 93,
+      coverage: 89,
+      tackling: 94
+    }
+]
+
+ss_list.each do |p|
+    Ss.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        coverage: p[:coverage],
+        tackling: p[:tackling],
+        speed: p[:speed]
+    )
+end
+
+
+fs_list =[
+    {
+      name: "Devin McCourty",
+      age: 34,
+      contract: "11,150,000",
+      position: "SS",
+      image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13236.png&w=350&h=254",
+      speed: 95,
+      coverage: 94,
+      tackling: 84
+    }
+]
+
+fs_list.each do |p|
+    Fs.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        coverage: p[:coverage],
+        tackling: p[:tackling],
+        speed: p[:speed]
+    )
+end
+
+

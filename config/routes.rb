@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
 
-  # resources :tightends
-  # resources :rguards
-  # resources :lguards
-  # resources :centers
-  # resources :rtackles
-  # resources :ltackles
-  # resources :wideouts
-  # resources :wide_receivers
-  # resources :runningbacks
-
   ####USER STUFF
   post "/login", to: "users#login"
   post "/create_account", to: "users#create_account"
@@ -29,6 +19,15 @@ Rails.application.routes.draw do
   get "/all_lts", to: "ltackles#all_lts"
   get "/all_rts", to: "rtackles#all_rts"
   get "/all_tes", to: "tightends#all_tes"
+  get "/all_les", to: "leftends#all_les"
+  get "/all_res", to: "rightends#all_res"
+  get "/all_dts", to: "dtackles#all_dts"
+  get "/all_lolbs", to: "lolbs#all_lolbs"
+  get "/all_rolbs", to: "rolbs#all_rolbs"
+  get "/all_mlbs", to: "mlbs#all_mlbs"
+  get "/all_cbs", to: "cbs#all_cbs"
+  get "/all_fs", to: "fs#all_fs"
+  get "/all_ss", to: "sses#all_ss"
 
   ###TEAM STUFF
   post "/create_team", to: "teams#create_team"

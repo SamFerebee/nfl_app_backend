@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_05_010344) do
+ActiveRecord::Schema.define(version: 2021_04_08_170052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cbs", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "mancoverage"
+    t.integer "zonecoverage"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "centers", force: :cascade do |t|
     t.string "name"
@@ -26,6 +39,45 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+  end
+
+  create_table "dtackles", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "strength"
+    t.integer "passrush"
+    t.integer "runstuff"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "fs", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "coverage"
+    t.integer "tackling"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "leftends", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "strength"
+    t.integer "passrush"
+    t.integer "runstuff"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "lguards", force: :cascade do |t|
@@ -41,6 +93,19 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.string "image"
   end
 
+  create_table "lolbs", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "strength"
+    t.integer "passrush"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "ltackles", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -52,6 +117,19 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+  end
+
+  create_table "mlbs", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "tackling"
+    t.integer "coverage"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "quarterbacks", force: :cascade do |t|
@@ -80,6 +158,32 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.string "image"
   end
 
+  create_table "rightends", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "strength"
+    t.integer "passrush"
+    t.integer "runstuff"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "rolbs", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "strength"
+    t.integer "passrush"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "rtackles", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -106,6 +210,19 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.string "image"
   end
 
+  create_table "sses", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "contract"
+    t.string "position"
+    t.string "image"
+    t.integer "speed"
+    t.integer "coverage"
+    t.integer "tackling"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "city"
@@ -121,13 +238,31 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.bigint "lguard_id", null: false
     t.bigint "rguard_id", null: false
     t.bigint "tightend_id", null: false
+    t.bigint "leftend_id", null: false
+    t.bigint "rightend_id", null: false
+    t.bigint "dtackle_id", null: false
+    t.bigint "rolb_id", null: false
+    t.bigint "mlb_id", null: false
+    t.bigint "lolb_id", null: false
+    t.bigint "cb_id", null: false
+    t.bigint "fs_id", null: false
+    t.bigint "ss_id", null: false
+    t.index ["cb_id"], name: "index_teams_on_cb_id"
     t.index ["center_id"], name: "index_teams_on_center_id"
+    t.index ["dtackle_id"], name: "index_teams_on_dtackle_id"
+    t.index ["fs_id"], name: "index_teams_on_fs_id"
+    t.index ["leftend_id"], name: "index_teams_on_leftend_id"
     t.index ["lguard_id"], name: "index_teams_on_lguard_id"
+    t.index ["lolb_id"], name: "index_teams_on_lolb_id"
     t.index ["ltackle_id"], name: "index_teams_on_ltackle_id"
+    t.index ["mlb_id"], name: "index_teams_on_mlb_id"
     t.index ["quarterback_id"], name: "index_teams_on_quarterback_id"
     t.index ["rguard_id"], name: "index_teams_on_rguard_id"
+    t.index ["rightend_id"], name: "index_teams_on_rightend_id"
+    t.index ["rolb_id"], name: "index_teams_on_rolb_id"
     t.index ["rtackle_id"], name: "index_teams_on_rtackle_id"
     t.index ["runningback_id"], name: "index_teams_on_runningback_id"
+    t.index ["ss_id"], name: "index_teams_on_ss_id"
     t.index ["tightend_id"], name: "index_teams_on_tightend_id"
     t.index ["user_id"], name: "index_teams_on_user_id"
     t.index ["wide_receiver_id"], name: "index_teams_on_wide_receiver_id"
@@ -167,13 +302,22 @@ ActiveRecord::Schema.define(version: 2021_04_05_010344) do
     t.string "image"
   end
 
+  add_foreign_key "teams", "cbs"
   add_foreign_key "teams", "centers"
+  add_foreign_key "teams", "dtackles"
+  add_foreign_key "teams", "fs", column: "fs_id"
+  add_foreign_key "teams", "leftends"
   add_foreign_key "teams", "lguards"
+  add_foreign_key "teams", "lolbs"
   add_foreign_key "teams", "ltackles"
+  add_foreign_key "teams", "mlbs"
   add_foreign_key "teams", "quarterbacks"
   add_foreign_key "teams", "rguards"
+  add_foreign_key "teams", "rightends"
+  add_foreign_key "teams", "rolbs"
   add_foreign_key "teams", "rtackles"
   add_foreign_key "teams", "runningbacks"
+  add_foreign_key "teams", "sses"
   add_foreign_key "teams", "tightends"
   add_foreign_key "teams", "users"
   add_foreign_key "teams", "wide_receivers"
