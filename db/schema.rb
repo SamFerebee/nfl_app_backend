@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_08_170052) do
+ActiveRecord::Schema.define(version: 2021_04_09_014001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "zonecoverage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "centers", force: :cascade do |t|
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "dtackles", force: :cascade do |t|
@@ -52,6 +54,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "runstuff"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "fs", force: :cascade do |t|
@@ -65,6 +68,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "tackling"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "leftends", force: :cascade do |t|
@@ -78,6 +82,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "runstuff"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "lguards", force: :cascade do |t|
@@ -91,6 +96,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "lolbs", force: :cascade do |t|
@@ -104,6 +110,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "passrush"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "ltackles", force: :cascade do |t|
@@ -117,6 +124,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "mlbs", force: :cascade do |t|
@@ -130,6 +138,49 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "coverage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
+  end
+
+  create_table "nflteams", force: :cascade do |t|
+    t.string "name"
+    t.bigint "quarterback_id", null: false
+    t.bigint "runningback_id", null: false
+    t.bigint "wide_receiver_id", null: false
+    t.bigint "tightend_id", null: false
+    t.bigint "lguard_id", null: false
+    t.bigint "rguard_id", null: false
+    t.bigint "center_id", null: false
+    t.bigint "ltackle_id", null: false
+    t.bigint "rtackle_id", null: false
+    t.bigint "leftend_id", null: false
+    t.bigint "rightend_id", null: false
+    t.bigint "dtackle_id", null: false
+    t.bigint "lolb_id", null: false
+    t.bigint "rolb_id", null: false
+    t.bigint "mlb_id", null: false
+    t.bigint "cb_id", null: false
+    t.bigint "fs_id", null: false
+    t.bigint "ss_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cb_id"], name: "index_nflteams_on_cb_id"
+    t.index ["center_id"], name: "index_nflteams_on_center_id"
+    t.index ["dtackle_id"], name: "index_nflteams_on_dtackle_id"
+    t.index ["fs_id"], name: "index_nflteams_on_fs_id"
+    t.index ["leftend_id"], name: "index_nflteams_on_leftend_id"
+    t.index ["lguard_id"], name: "index_nflteams_on_lguard_id"
+    t.index ["lolb_id"], name: "index_nflteams_on_lolb_id"
+    t.index ["ltackle_id"], name: "index_nflteams_on_ltackle_id"
+    t.index ["mlb_id"], name: "index_nflteams_on_mlb_id"
+    t.index ["quarterback_id"], name: "index_nflteams_on_quarterback_id"
+    t.index ["rguard_id"], name: "index_nflteams_on_rguard_id"
+    t.index ["rightend_id"], name: "index_nflteams_on_rightend_id"
+    t.index ["rolb_id"], name: "index_nflteams_on_rolb_id"
+    t.index ["rtackle_id"], name: "index_nflteams_on_rtackle_id"
+    t.index ["runningback_id"], name: "index_nflteams_on_runningback_id"
+    t.index ["ss_id"], name: "index_nflteams_on_ss_id"
+    t.index ["tightend_id"], name: "index_nflteams_on_tightend_id"
+    t.index ["wide_receiver_id"], name: "index_nflteams_on_wide_receiver_id"
   end
 
   create_table "quarterbacks", force: :cascade do |t|
@@ -143,6 +194,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "rguards", force: :cascade do |t|
@@ -156,6 +208,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "rightends", force: :cascade do |t|
@@ -169,6 +222,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "runstuff"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "rolbs", force: :cascade do |t|
@@ -182,6 +236,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "passrush"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "rtackles", force: :cascade do |t|
@@ -195,6 +250,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "runningbacks", force: :cascade do |t|
@@ -208,6 +264,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "sses", force: :cascade do |t|
@@ -221,6 +278,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.integer "tackling"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "team"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -279,6 +337,7 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
   create_table "users", force: :cascade do |t|
@@ -300,8 +359,27 @@ ActiveRecord::Schema.define(version: 2021_04_08_170052) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "team"
   end
 
+  add_foreign_key "nflteams", "cbs"
+  add_foreign_key "nflteams", "centers"
+  add_foreign_key "nflteams", "dtackles"
+  add_foreign_key "nflteams", "fs", column: "fs_id"
+  add_foreign_key "nflteams", "leftends"
+  add_foreign_key "nflteams", "lguards"
+  add_foreign_key "nflteams", "lolbs"
+  add_foreign_key "nflteams", "ltackles"
+  add_foreign_key "nflteams", "mlbs"
+  add_foreign_key "nflteams", "quarterbacks"
+  add_foreign_key "nflteams", "rguards"
+  add_foreign_key "nflteams", "rightends"
+  add_foreign_key "nflteams", "rolbs"
+  add_foreign_key "nflteams", "rtackles"
+  add_foreign_key "nflteams", "runningbacks"
+  add_foreign_key "nflteams", "sses"
+  add_foreign_key "nflteams", "tightends"
+  add_foreign_key "nflteams", "wide_receivers"
   add_foreign_key "teams", "cbs"
   add_foreign_key "teams", "centers"
   add_foreign_key "teams", "dtackles"

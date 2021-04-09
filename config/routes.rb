@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :nflteams
   ####USER STUFF
   post "/login", to: "users#login"
   post "/create_account", to: "users#create_account"
@@ -31,6 +32,7 @@ Rails.application.routes.draw do
 
   ###TEAM STUFF
   post "/create_team", to: "teams#create_team"
+  get "/all_nfl_teams", to: "nflteams#all_teams"
 
   get "/test", to: "quarterbacks#test"
 
