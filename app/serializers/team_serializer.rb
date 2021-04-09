@@ -1,5 +1,5 @@
 class TeamSerializer < ActiveModel::Serializer
-  attributes :id, :name, :city, :quarterback, :runningback, :wide_receiver, :ltackle, :rtackle, :center, :lguard, :rguard, :tightend, :leftend, :rightend, :dtackle, :lolb, :rolb, :mlb, :cb, :fs, :ss, :offense_rating, :defense_rating, :overall_rating
+  attributes :id, :name, :city, :quarterback, :runningback, :wide_receiver, :ltackle, :rtackle, :center, :lguard, :rguard, :tightend, :leftend, :rightend, :dtackle, :lolb, :rolb, :mlb, :cb, :fs, :ss, :offense_rating, :defense_rating, :overall_rating, :wr2, :cb2
   
   belongs_to :quarterback
   belongs_to :runningback
@@ -19,4 +19,6 @@ class TeamSerializer < ActiveModel::Serializer
   belongs_to :cb
   belongs_to :fs
   belongs_to :ss
+  belongs_to :wr2
+  belongs_to :cb2
 end

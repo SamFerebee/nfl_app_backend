@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :cb2s
+  resources :wr2s
   resources :nflteams
   ####USER STUFF
   post "/login", to: "users#login"

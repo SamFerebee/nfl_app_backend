@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_014001) do
+ActiveRecord::Schema.define(version: 2021_04_09_141852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cb2s", force: :cascade do |t|
+    t.string "name"
+    t.string "team"
+    t.integer "age"
+    t.string "position"
+    t.string "image"
+    t.string "contract"
+    t.integer "speed"
+    t.integer "mancoverage"
+    t.integer "zonecoverage"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "cbs", force: :cascade do |t|
     t.string "name"
@@ -163,6 +177,9 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
     t.bigint "ss_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "cb2_id", null: false
+    t.bigint "wr2_id", null: false
+    t.index ["cb2_id"], name: "index_nflteams_on_cb2_id"
     t.index ["cb_id"], name: "index_nflteams_on_cb_id"
     t.index ["center_id"], name: "index_nflteams_on_center_id"
     t.index ["dtackle_id"], name: "index_nflteams_on_dtackle_id"
@@ -181,6 +198,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
     t.index ["ss_id"], name: "index_nflteams_on_ss_id"
     t.index ["tightend_id"], name: "index_nflteams_on_tightend_id"
     t.index ["wide_receiver_id"], name: "index_nflteams_on_wide_receiver_id"
+    t.index ["wr2_id"], name: "index_nflteams_on_wr2_id"
   end
 
   create_table "quarterbacks", force: :cascade do |t|
@@ -305,6 +323,9 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
     t.bigint "cb_id", null: false
     t.bigint "fs_id", null: false
     t.bigint "ss_id", null: false
+    t.bigint "cb2_id", null: false
+    t.bigint "wr2_id", null: false
+    t.index ["cb2_id"], name: "index_teams_on_cb2_id"
     t.index ["cb_id"], name: "index_teams_on_cb_id"
     t.index ["center_id"], name: "index_teams_on_center_id"
     t.index ["dtackle_id"], name: "index_teams_on_dtackle_id"
@@ -324,6 +345,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
     t.index ["tightend_id"], name: "index_teams_on_tightend_id"
     t.index ["user_id"], name: "index_teams_on_user_id"
     t.index ["wide_receiver_id"], name: "index_teams_on_wide_receiver_id"
+    t.index ["wr2_id"], name: "index_teams_on_wr2_id"
   end
 
   create_table "tightends", force: :cascade do |t|
@@ -362,6 +384,21 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
     t.string "team"
   end
 
+  create_table "wr2s", force: :cascade do |t|
+    t.string "name"
+    t.string "team"
+    t.integer "age"
+    t.string "position"
+    t.string "image"
+    t.string "contract"
+    t.integer "speed"
+    t.integer "catching"
+    t.integer "route_running"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "nflteams", "cb2s"
   add_foreign_key "nflteams", "cbs"
   add_foreign_key "nflteams", "centers"
   add_foreign_key "nflteams", "dtackles"
@@ -380,6 +417,8 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
   add_foreign_key "nflteams", "sses"
   add_foreign_key "nflteams", "tightends"
   add_foreign_key "nflteams", "wide_receivers"
+  add_foreign_key "nflteams", "wr2s"
+  add_foreign_key "teams", "cb2s"
   add_foreign_key "teams", "cbs"
   add_foreign_key "teams", "centers"
   add_foreign_key "teams", "dtackles"
@@ -399,4 +438,5 @@ ActiveRecord::Schema.define(version: 2021_04_09_014001) do
   add_foreign_key "teams", "tightends"
   add_foreign_key "teams", "users"
   add_foreign_key "teams", "wide_receivers"
+  add_foreign_key "teams", "wr2s"
 end

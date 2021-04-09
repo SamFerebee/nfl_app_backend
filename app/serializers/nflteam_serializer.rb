@@ -1,5 +1,5 @@
 class NflteamSerializer < ActiveModel::Serializer
-  attributes :id, :name, :quarterback, :runningback, :wide_receiver, :ltackle, :rtackle, :center, :lguard, :rguard, :tightend, :leftend, :rightend, :dtackle, :lolb, :rolb, :mlb, :cb, :fs, :ss, :offense_rating, :defense_rating, :overall_rating
+  attributes :id, :name, :quarterback, :runningback, :wide_receiver, :ltackle, :rtackle, :center, :lguard, :rguard, :tightend, :leftend, :rightend, :dtackle, :lolb, :rolb, :mlb, :cb, :fs, :ss, :offense_rating, :defense_rating, :overall_rating, :wr2, :cb2
   
   has_one :quarterback
   has_one :runningback
@@ -20,4 +20,6 @@ class NflteamSerializer < ActiveModel::Serializer
   has_one :cb
   has_one :fs
   has_one :ss
+  belongs_to :wr2
+  belongs_to :cb2
 end

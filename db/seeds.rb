@@ -100,11 +100,36 @@ wr_list = [
         route_running: 85,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2974858.png",
         team: "Giants" 
+    },
+    {
+        name: "Sterling Shepard",
+        age: 27,
+        contract: "9,000,000",
+        position: "Wide Receiver",
+        speed: 83,
+        catching: 92,
+        route_running: 90,
+        team: "Giants",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976592.png"
     }
 ]
 
 wr_list.each do |wr| 
     WideReceiver.create(
+        name: wr[:name],
+        age: wr[:age],
+        contract: wr[:contract],
+        position: wr[:position],
+        speed: wr[:speed],
+        catching: wr[:catching],
+        route_running: wr[:route_running],
+        image: wr[:image],
+        team: wr[:team]
+    )
+end
+
+wr_list.each do |wr|
+    Wr2.create(
         name: wr[:name],
         age: wr[:age],
         contract: wr[:contract],
@@ -613,11 +638,36 @@ cb_list =[
         mancoverage: 94,
         zonecoverage: 93,
         team: "Giants"
+    },
+    {
+        name: "Adoree Jackson",
+        age: 26,
+        contract: "16,000,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3120347.png",
+        speed: 96,
+        mancoverage: 87,
+        zonecoverage: 85,
+        team: "Giants"
     }
 ]
 
 cb_list.each do |p|
     Cb.create(
+        name: p[:name],
+        age: p[:age],
+        contract: p[:contract],
+        position: p[:position],
+        image: p[:image],
+        zonecoverage: p[:zonecoverage],
+        mancoverage: p[:mancoverage],
+        speed: p[:speed],
+        team: p[:team]
+    )
+end
+
+cb_list.each do |p|
+    Cb2.create(
         name: p[:name],
         age: p[:age],
         contract: p[:contract],
@@ -713,7 +763,8 @@ Nflteam.create(
     name: "New York Giants",
     quarterback: Quarterback.find_by(team: "Giants"),
     runningback: Runningback.find_by(team: "Giants"),
-    wide_receiver: WideReceiver.find_by(team: "Giants"),
+    wide_receiver: WideReceiver.find_by(name: "Kenny Golladay"),
+    wr2: Wr2.find_by(name: "Sterling Shepard"),
     tightend: Tightend.find_by(team: "Giants"),
     ltackle: Ltackle.find_by(team: "Giants"),
     rtackle: Rtackle.find_by(team: "Giants"),
@@ -727,6 +778,7 @@ Nflteam.create(
     rolb: Rolb.find_by(team: "Giants"),
     mlb: Mlb.find_by(team: "Giants"),
     cb: Cb.find_by(team: "Giants"),
+    cb2: Cb2.find_by(name: "Adoree Jackson"),
     fs: Fs.find_by(team: "Giants"),
     ss: Ss.find_by(team: "Giants")
 )
