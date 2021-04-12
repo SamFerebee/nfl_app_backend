@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
     has_many :teams
+    has_many :seasons, through: :teams
     validates :username, uniqueness: { case_sensitive: false}
     validates :username, presence: true
     validates :email, presence: true

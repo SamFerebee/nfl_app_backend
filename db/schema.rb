@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_141852) do
+ActiveRecord::Schema.define(version: 2021_04_12_203544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -285,6 +285,16 @@ ActiveRecord::Schema.define(version: 2021_04_09_141852) do
     t.string "team"
   end
 
+  create_table "seasons", force: :cascade do |t|
+    t.jsonb "opponents"
+    t.integer "wins"
+    t.integer "losses"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "team_id", null: false
+    t.index ["team_id"], name: "index_seasons_on_team_id"
+  end
+
   create_table "sses", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -418,6 +428,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_141852) do
   add_foreign_key "nflteams", "tightends"
   add_foreign_key "nflteams", "wide_receivers"
   add_foreign_key "nflteams", "wr2s"
+  add_foreign_key "seasons", "teams"
   add_foreign_key "teams", "cb2s"
   add_foreign_key "teams", "cbs"
   add_foreign_key "teams", "centers"
