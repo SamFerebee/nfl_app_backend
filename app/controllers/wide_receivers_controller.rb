@@ -1,5 +1,6 @@
 class WideReceiversController < ApplicationController
     def all_wrs
-        render json: WideReceiver.all
+        all = WideReceiver.all.sort_by{|wr| wr.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end

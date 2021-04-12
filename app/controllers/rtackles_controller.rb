@@ -1,5 +1,6 @@
 class RtacklesController < ApplicationController
     def all_rts
-        render json: Rtackle.all
+        all = Rtackle.all.sort_by{|rt| rt.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end

@@ -10,7 +10,7 @@ qb_list = [
         throw_power: 96,
         speed: 91,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14881.png&w=350&h=254",
-        team: "Seahawks"
+        team: "SEA"
     },
     {
         name: "Aaron Rodgers",
@@ -21,7 +21,7 @@ qb_list = [
         throw_power: 94,
         speed: 84,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8439.png",
-        team: "Packers"
+        team: "GB"
     },
     {
         name: "Daniel Jones",
@@ -32,7 +32,7 @@ qb_list = [
         throw_power: 81,
         speed: 93,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/3917792.png",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Dak Prescott",
@@ -43,7 +43,7 @@ qb_list = [
         throw_power: 92,
         speed: 90,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/2577417.png",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -71,7 +71,7 @@ rb_list = [
         power: 92,
         speed: 94,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Ezekiel Elliott",
@@ -82,7 +82,7 @@ rb_list = [
         power: 94,
         speed: 86,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3051392.png&w=350&h=254",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -110,7 +110,7 @@ wr_list = [
         catching: 95,
         route_running: 89,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13982.png",
-        team: "Falcons"
+        team: "ATL"
     },
     {
         name: "Kenny Golladay",
@@ -121,7 +121,7 @@ wr_list = [
         catching: 94,
         route_running: 85,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2974858.png",
-        team: "Giants" 
+        team: "NYG" 
     },
     {
         name: "Sterling Shepard",
@@ -131,7 +131,7 @@ wr_list = [
         speed: 83,
         catching: 92,
         route_running: 90,
-        team: "Giants",
+        team: "NYG",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976592.png"
     },
     {
@@ -142,7 +142,7 @@ wr_list = [
         speed: 88,
         catching: 93,
         route_running: 93,
-        team: "Cowboys",
+        team: "DAL",
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/2976499.png"
     },
     {
@@ -153,7 +153,7 @@ wr_list = [
         speed: 89,
         catching: 92,
         route_running: 84,
-        team: "Cowboys",
+        team: "DAL",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036348.png&w=350&h=254"
     }
 ]
@@ -196,7 +196,7 @@ lt_list = [
         pass_block: 94,
         run_block: 92,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/13241.png",
-        team: "49ers"
+        team: "SF"
     },
     {
         name: "Nate Solder",
@@ -207,7 +207,7 @@ lt_list = [
         pass_block: 79,
         run_block: 79,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13964.png",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Tyron Smith",
@@ -218,7 +218,7 @@ lt_list = [
         pass_block: 90,
         run_block: 90,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13978.png&w=350&h=254",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -246,7 +246,7 @@ rt_list = [
         pass_block: 96,
         run_block: 90,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/14951.png",
-        team: "Chiefs"
+        team: "KC"
     },
     {
         name: "Matt Peart",
@@ -257,7 +257,7 @@ rt_list = [
         pass_block: 75,
         run_block: 75,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/3921936.png",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "La'el Collins",
@@ -268,7 +268,7 @@ rt_list = [
         pass_block: 84,
         run_block: 83,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2577302.png&w=350&h=254",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -296,7 +296,7 @@ center_list = [
         pass_block: 93,
         run_block: 89,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14124.png",
-        team: "Eagles"
+        team: "PHI"
     },
     {
         name: "Nick Gates",
@@ -307,7 +307,7 @@ center_list = [
         pass_block: 81,
         run_block: 79,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116096.png&w=350&h=254",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Tyler Biadasz",
@@ -318,7 +318,7 @@ center_list = [
         pass_block: 81,
         run_block: 79,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/4035788.png",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -347,7 +347,7 @@ lg_list = [
         pass_block: 91,
         run_block: 96,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3129308.png&w=350&h=254",
-        team: "Colts"
+        team: "IND"
     },
     {
         name: "Shane Lemieux",
@@ -358,7 +358,7 @@ lg_list = [
         pass_block: 76,
         run_block: 74,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3915142.png",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Connor Williams",
@@ -369,7 +369,7 @@ lg_list = [
         pass_block: 83,
         run_block: 85,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3821577.png",
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -398,7 +398,7 @@ rg_list = [
         pass_block: 93,
         run_block: 96,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16709.png",
-        team: "Cowboys"
+        team: "DAL"
     },
     {
         name: "Zach Fulton",
@@ -409,7 +409,7 @@ rg_list = [
         pass_block: 76,
         run_block: 75,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16923.png",
-        team: "Giants"
+        team: "NYG"
     }
 ]
 
@@ -431,14 +431,14 @@ end
 tightend_list = [
     {
         name: "Travis Kelce",
-        age: 27,
-        contract: "4,544,000",
+        age: 32,
+        contract: "11,200,000",
         position: "Tight End",
         speed: 91,
         blocking: 94,
         catching: 97,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15847.png",
-        team: "Chiefs"
+        team: "KC"
     },
     {
         name: "Evan Engram",
@@ -449,18 +449,18 @@ tightend_list = [
         blocking: 77,
         catching: 81,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3051876.png",
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Blake Jarwin",
         age: 27,
-        contract: "6,013,000",
+        contract: "4,544,000",
         position: "Tight End",
         speed: 82,
         blocking: 83,
         catching: 84,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2991767.png",
-        team: "Cowboys"
+        team: "DAL"
     }
 
 ]
@@ -489,7 +489,7 @@ leftend_list =[
       strength: 92,
       passrush: 86,
       runstuff: 87,
-      team: "Cardinals"   
+      team: "ARI"   
     },
     {
         name: "Dexter Lawrence",
@@ -500,7 +500,7 @@ leftend_list =[
         strength: 88,
         passrush: 82,
         runstuff: 87,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "DeMarcus Lawrence",
@@ -511,7 +511,7 @@ leftend_list =[
         strength: 91,
         passrush: 94,
         runstuff: 92,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -540,7 +540,7 @@ rightend_list =[
       strength: 96,
       passrush: 95,
       runstuff: 89,
-      team: "Browns"   
+      team: "CLE"   
     },
     {
        name: "Leonard Williams",
@@ -551,7 +551,7 @@ rightend_list =[
        strength: 93,
        passrush: 89,
        runstuff: 93,
-       team: "Giants" 
+       team: "NYG" 
     },
     {
         name: "Randy Gregory",
@@ -562,7 +562,7 @@ rightend_list =[
         strength: 83,
         passrush: 85,
         runstuff: 79,
-        team: "Cowboys" 
+        team: "DAL" 
     }
 ]
 
@@ -590,7 +590,7 @@ dtackle_list =[
       strength: 99,
       passrush: 99,
       runstuff: 94,
-      team: "Rams" 
+      team: "LAR" 
     },
     {
         name: "Danny Shelton",
@@ -601,7 +601,7 @@ dtackle_list =[
         strength: 79,
         passrush: 72,
         runstuff: 74,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Trysten Hill",
@@ -612,7 +612,7 @@ dtackle_list =[
         strength: 83,
         passrush: 77,
         runstuff: 78,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -640,7 +640,7 @@ lolb_list =[
       strength: 88,
       passrush: 97,
       speed: 94,
-      team: "Steelers"  
+      team: "PIT"  
     },
     {
         name: "Lorenzo Carter",
@@ -651,7 +651,7 @@ lolb_list =[
         strength: 82,
         passrush: 84,
         speed: 79,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Jaylon Smith",
@@ -662,7 +662,7 @@ lolb_list =[
         strength: 88,
         passrush: 86,
         speed: 92,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -691,7 +691,7 @@ rolb_list =[
       strength: 95,
       passrush: 95,
       speed: 90,
-      team: "Bears"  
+      team: "CHI"  
     },
     {
         name: "Ifeadi Odenigbo",
@@ -702,7 +702,7 @@ rolb_list =[
         strength: 85,
         passrush: 86,
         speed: 84,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Tarrel Basham",
@@ -713,7 +713,7 @@ rolb_list =[
         strength: 82,
         passrush: 81,
         speed: 82,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -741,7 +741,7 @@ mlb_list =[
       speed: 92,
       tackling: 99,
       coverage: 92,
-      team: "Seahawks"  
+      team: "SEA"  
     },
     {
         name: "Blake Martinez",
@@ -752,7 +752,7 @@ mlb_list =[
         speed: 87,
         tackling: 91,
         coverage: 86,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Leighton Vander Esch",
@@ -763,7 +763,7 @@ mlb_list =[
         speed: 89,
         tackling: 94,
         coverage: 90,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -792,7 +792,7 @@ cb_list =[
       speed: 94,
       mancoverage: 97,
       zonecoverage: 95,
-      team: "Patriots"  
+      team: "NE"  
     },
     {
         name: "James Bradberry",
@@ -803,7 +803,7 @@ cb_list =[
         speed: 92,
         mancoverage: 94,
         zonecoverage: 93,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Adoree Jackson",
@@ -814,7 +814,7 @@ cb_list =[
         speed: 96,
         mancoverage: 87,
         zonecoverage: 85,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Trevon Diggs",
@@ -825,7 +825,7 @@ cb_list =[
         speed: 84,
         mancoverage: 82,
         zonecoverage: 79,
-        team: "Cowboys"
+        team: "DAL"
     },
     {
         name: "Anthony Brown",
@@ -836,7 +836,7 @@ cb_list =[
         speed: 82,
         mancoverage: 85,
         zonecoverage: 83,
-        team: "Cowboys"
+        team: "DAL"
     }
     
 ]
@@ -879,7 +879,7 @@ ss_list =[
       speed: 93,
       coverage: 89,
       tackling: 94,
-      team: "Chiefs"
+      team: "KC"
     },
     {
         name: "Jabrill Peppers",
@@ -890,7 +890,7 @@ ss_list =[
         speed: 90,
         coverage: 92,
         tackling: 92,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Donovan Wilson",
@@ -901,7 +901,7 @@ ss_list =[
         speed: 78,
         coverage: 81,
         tackling: 78,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -930,7 +930,7 @@ fs_list =[
       speed: 95,
       coverage: 94,
       tackling: 84,
-      team: "Patriots"
+      team: "NE"
     },
     {
         name: "Logan Ryan",
@@ -941,7 +941,7 @@ fs_list =[
         speed: 87,
         coverage: 87,
         tackling: 83,
-        team: "Giants"
+        team: "NYG"
     },
     {
         name: "Damontae Kazee",
@@ -952,7 +952,7 @@ fs_list =[
         speed: 82,
         coverage: 81,
         tackling: 75,
-        team: "Cowboys"
+        team: "DAL"
     }
 ]
 
@@ -972,48 +972,48 @@ end
 
 Nflteam.create(
     name: "New York Giants",
-    quarterback: Quarterback.find_by(team: "Giants"),
-    runningback: Runningback.find_by(team: "Giants"),
+    quarterback: Quarterback.find_by(team: "NYG"),
+    runningback: Runningback.find_by(team: "NYG"),
     wide_receiver: WideReceiver.find_by(name: "Kenny Golladay"),
     wr2: Wr2.find_by(name: "Sterling Shepard"),
-    tightend: Tightend.find_by(team: "Giants"),
-    ltackle: Ltackle.find_by(team: "Giants"),
-    rtackle: Rtackle.find_by(team: "Giants"),
-    center: Center.find_by(team: "Giants"),
-    lguard: Lguard.find_by(team: "Giants"),
-    rguard: Rguard.find_by(team: "Giants"),
-    leftend: Leftend.find_by(team: "Giants"),
-    rightend: Rightend.find_by(team: "Giants"),
-    dtackle: Dtackle.find_by(team: "Giants"),
-    lolb: Lolb.find_by(team: "Giants"),
-    rolb: Rolb.find_by(team: "Giants"),
-    mlb: Mlb.find_by(team: "Giants"),
+    tightend: Tightend.find_by(team: "NYG"),
+    ltackle: Ltackle.find_by(team: "NYG"),
+    rtackle: Rtackle.find_by(team: "NYG"),
+    center: Center.find_by(team: "NYG"),
+    lguard: Lguard.find_by(team: "NYG"),
+    rguard: Rguard.find_by(team: "NYG"),
+    leftend: Leftend.find_by(team: "NYG"),
+    rightend: Rightend.find_by(team: "NYG"),
+    dtackle: Dtackle.find_by(team: "NYG"),
+    lolb: Lolb.find_by(team: "NYG"),
+    rolb: Rolb.find_by(team: "NYG"),
+    mlb: Mlb.find_by(team: "NYG"),
     cb: Cb.find_by(name: "James Bradberry"),
     cb2: Cb2.find_by(name: "Adoree Jackson"),
-    fs: Fs.find_by(team: "Giants"),
-    ss: Ss.find_by(team: "Giants")
+    fs: Fs.find_by(team: "NYG"),
+    ss: Ss.find_by(team: "NYG")
 )
-
+                   
 Nflteam.create(
     name: "Dallas Cowboys",
-    quarterback: Quarterback.find_by(team: "Cowboys"),
-    runningback: Runningback.find_by(team: "Cowboys"),
+    quarterback: Quarterback.find_by(team: "DAL"),
+    runningback: Runningback.find_by(team: "DAL"),
     wide_receiver: WideReceiver.find_by(name: "Amari Cooper"),
     wr2: Wr2.find_by(name: "Michael Gallup"),
-    tightend: Tightend.find_by(team: "Cowboys"),
-    ltackle: Ltackle.find_by(team: "Cowboys"),
-    rtackle: Rtackle.find_by(team: "Cowboys"),
-    center: Center.find_by(team: "Cowboys"),
-    lguard: Lguard.find_by(team: "Cowboys"),
-    rguard: Rguard.find_by(team: "Cowboys"),
-    leftend: Leftend.find_by(team: "Cowboys"),
-    rightend: Rightend.find_by(team: "Cowboys"),
-    dtackle: Dtackle.find_by(team: "Cowboys"),
-    lolb: Lolb.find_by(team: "Cowboys"),
-    rolb: Rolb.find_by(team: "Cowboys"),
-    mlb: Mlb.find_by(team: "Cowboys"),
+    tightend: Tightend.find_by(team: "DAL"),
+    ltackle: Ltackle.find_by(team: "DAL"),
+    rtackle: Rtackle.find_by(team: "DAL"),
+    center: Center.find_by(team: "DAL"),
+    lguard: Lguard.find_by(team: "DAL"),
+    rguard: Rguard.find_by(team: "DAL"),
+    leftend: Leftend.find_by(team: "DAL"),
+    rightend: Rightend.find_by(team: "DAL"),
+    dtackle: Dtackle.find_by(team: "DAL"),
+    lolb: Lolb.find_by(team: "DAL"),
+    rolb: Rolb.find_by(team: "DAL"),
+    mlb: Mlb.find_by(team: "DAL"),
     cb: Cb.find_by(name: "Trevon Diggs"),
     cb2: Cb2.find_by(name: "Anthony Brown"),
-    fs: Fs.find_by(team: "Cowboys"),
-    ss: Ss.find_by(team: "Cowboys")
+    fs: Fs.find_by(team: "DAL"),
+    ss: Ss.find_by(team: "DAL")
 )

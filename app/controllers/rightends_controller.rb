@@ -1,5 +1,6 @@
 class RightendsController < ApplicationController
     def all_res
-        render json: Rightend.all
+        all = Rightend.all.sort_by{|re| re.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end

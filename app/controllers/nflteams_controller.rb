@@ -1,7 +1,8 @@
 class NflteamsController < ApplicationController
 
     def all_teams
-        render json: Nflteam.all
+        all = Nflteam.all.sort_by{|t| t.name}
+        render json: all
     end
 
 end

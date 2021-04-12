@@ -1,3 +1,3 @@
 class MlbSerializer < ActiveModel::Serializer
-  attributes :id, :name, :age, :contract, :position, :image, :speed, :tackling, :coverage, :overall
+  attributes :id, :name, :age, :contract, :position, :image, :speed, :tackling, :coverage, :overall, :team
 end

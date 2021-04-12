@@ -1,5 +1,6 @@
 class FsController < ApplicationController
     def all_fs
-        render json: Fs.all
+        all = Fs.all.sort_by {|fs| fs.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end

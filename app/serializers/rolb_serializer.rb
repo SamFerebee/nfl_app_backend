@@ -1,3 +1,3 @@
 class RolbSerializer < ActiveModel::Serializer
-  attributes :id, :name, :age, :contract, :position, :image, :speed, :strength, :passrush, :overall
+  attributes :id, :name, :age, :contract, :position, :image, :speed, :strength, :passrush, :overall, :team
 end

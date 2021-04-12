@@ -1,5 +1,6 @@
 class LeftendsController < ApplicationController
     def all_les
-        render json: Leftend.all
+        all = Leftend.all.sort_by{|le| le.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end

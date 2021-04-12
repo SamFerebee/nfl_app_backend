@@ -1,3 +1,3 @@
 class DtackleSerializer < ActiveModel::Serializer
-  attributes :id, :name, :age, :contract, :position, :image, :strength, :passrush, :runstuff, :overall
+  attributes :id, :name, :age, :contract, :position, :image, :strength, :passrush, :runstuff, :overall, :team
 end

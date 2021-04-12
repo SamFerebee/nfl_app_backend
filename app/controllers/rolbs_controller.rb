@@ -1,5 +1,6 @@
 class RolbsController < ApplicationController
     def all_rolbs
-        render json: Rolb.all
+        all = Rolb.all.sort_by{|rolb| rolb.contract.delete(',').to_i}.reverse
+        render json: all
     end
 end
