@@ -33,6 +33,17 @@ qb_list = [
         speed: 93,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/3917792.png",
         team: "Giants"
+    },
+    {
+        name: "Dak Prescott",
+        age: 27,
+        contract: "22,200,000",
+        position: "Quarterback",
+        accuracy: 92,
+        throw_power: 92,
+        speed: 90,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/2577417.png",
+        team: "Cowboys"
     }
 ]
 
@@ -61,6 +72,17 @@ rb_list = [
         speed: 94,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254",
         team: "Giants"
+    },
+    {
+        name: "Ezekiel Elliott",
+        age: 26, 
+        contract: "13,700,000",
+        position: "Runningback",
+        elusiveness: 87,
+        power: 94,
+        speed: 86,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3051392.png&w=350&h=254",
+        team: "Cowboys"
     }
 ]
 
@@ -111,6 +133,28 @@ wr_list = [
         route_running: 90,
         team: "Giants",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976592.png"
+    },
+    {
+        name: "Amari Cooper",
+        age: 27,
+        contract: "28,000,000",
+        position: "Wide Receiver",
+        speed: 88,
+        catching: 93,
+        route_running: 93,
+        team: "Cowboys",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/2976499.png"
+    },
+    {
+        name: "Michael Gallup",
+        age: 25,
+        contract: "2,665,000",
+        position: "Wide Receiver",
+        speed: 89,
+        catching: 92,
+        route_running: 84,
+        team: "Cowboys",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036348.png&w=350&h=254"
     }
 ]
 
@@ -164,6 +208,17 @@ lt_list = [
         run_block: 79,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13964.png",
         team: "Giants"
+    },
+    {
+        name: "Tyron Smith",
+        age: 31,
+        contract: "15,000,000",
+        position: "Left Tackle",
+        strength: 89,
+        pass_block: 90,
+        run_block: 90,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13978.png&w=350&h=254",
+        team: "Cowboys"
     }
 ]
 
@@ -203,6 +258,17 @@ rt_list = [
         run_block: 75,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/3921936.png",
         team: "Giants"
+    },
+    {
+        name: "La'el Collins",
+        age: 28,
+        contract: "6,800,000",
+        position: "Right Tackle",
+        strength: 85,
+        pass_block: 84,
+        run_block: 83,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2577302.png&w=350&h=254",
+        team: "Cowboys"
     }
 ]
 
@@ -242,6 +308,17 @@ center_list = [
         run_block: 79,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116096.png&w=350&h=254",
         team: "Giants"
+    },
+    {
+        name: "Tyler Biadasz",
+        age: 23,
+        contract: "903,000",
+        position: "Center",
+        strength: 82,
+        pass_block: 81,
+        run_block: 79,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/4035788.png",
+        team: "Cowboys"
     }
 ]
 
@@ -282,6 +359,17 @@ lg_list = [
         run_block: 74,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3915142.png",
         team: "Giants"
+    },
+    {
+        name: "Connor Williams",
+        age: 24,
+        contract: "2,960,000",
+        position: "Left Guard",
+        strength: 84,
+        pass_block: 83,
+        run_block: 85,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3821577.png",
+        team: "Cowboys"
     }
 ]
 
@@ -343,12 +431,12 @@ end
 tightend_list = [
     {
         name: "Travis Kelce",
-        age: 32,
-        contract: "9,300,000",
+        age: 27,
+        contract: "4,544,000",
         position: "Tight End",
-        speed: 92,
-        blocking: 92,
-        catching: 95,
+        speed: 91,
+        blocking: 94,
+        catching: 97,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15847.png",
         team: "Chiefs"
     },
@@ -362,7 +450,19 @@ tightend_list = [
         catching: 81,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3051876.png",
         team: "Giants"
+    },
+    {
+        name: "Blake Jarwin",
+        age: 27,
+        contract: "6,013,000",
+        position: "Tight End",
+        speed: 82,
+        blocking: 83,
+        catching: 84,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2991767.png",
+        team: "Cowboys"
     }
+
 ]
 
 tightend_list.each do |te| 
@@ -401,6 +501,17 @@ leftend_list =[
         passrush: 82,
         runstuff: 87,
         team: "Giants"
+    },
+    {
+        name: "DeMarcus Lawrence",
+        age: 29,
+        contract: "25,000,000",
+        position: "Left End",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/16802.png",
+        strength: 91,
+        passrush: 94,
+        runstuff: 92,
+        team: "Cowboys"
     }
 ]
 
@@ -441,6 +552,17 @@ rightend_list =[
        passrush: 89,
        runstuff: 93,
        team: "Giants" 
+    },
+    {
+        name: "Randy Gregory",
+        age: 29,
+        contract: "2,200,000",
+        position: "Right End",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/13988.png",
+        strength: 83,
+        passrush: 85,
+        runstuff: 79,
+        team: "Cowboys" 
     }
 ]
 
@@ -480,6 +602,17 @@ dtackle_list =[
         passrush: 72,
         runstuff: 74,
         team: "Giants"
+    },
+    {
+        name: "Trysten Hill",
+        age: 23,
+        contract: "1,328,000",
+        position: "Defensive Tackle",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4042141.png",
+        strength: 83,
+        passrush: 77,
+        runstuff: 78,
+        team: "Cowboys"
     }
 ]
 
@@ -519,6 +652,17 @@ lolb_list =[
         passrush: 84,
         speed: 79,
         team: "Giants"
+    },
+    {
+        name: "Jaylon Smith",
+        age: 26,
+        contract: "11,800,000",
+        position: "LOLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3052896.png",
+        strength: 88,
+        passrush: 86,
+        speed: 92,
+        team: "Cowboys"
     }
 ]
 
@@ -559,6 +703,17 @@ rolb_list =[
         passrush: 86,
         speed: 84,
         team: "Giants"
+    },
+    {
+        name: "Tarrel Basham",
+        age: 27,
+        contract: "2,500,000",
+        position: "ROLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3052977.png",
+        strength: 82,
+        passrush: 81,
+        speed: 82,
+        team: "Cowboys"
     }
 ]
 
@@ -598,6 +753,17 @@ mlb_list =[
         tackling: 91,
         coverage: 86,
         team: "Giants"
+    },
+    {
+        name: "Leighton Vander Esch",
+        age: 27,
+        contract: "3,769,000",
+        position: "MLB",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3138677.png",
+        speed: 89,
+        tackling: 94,
+        coverage: 90,
+        team: "Cowboys"
     }
 ]
 
@@ -649,7 +815,30 @@ cb_list =[
         mancoverage: 87,
         zonecoverage: 85,
         team: "Giants"
+    },
+    {
+        name: "Trevon Diggs",
+        age: 24,
+        contract: "1,436,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040966.png",
+        speed: 84,
+        mancoverage: 82,
+        zonecoverage: 79,
+        team: "Cowboys"
+    },
+    {
+        name: "Anthony Brown",
+        age: 28,
+        contract: "5,750,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2977756.png",
+        speed: 82,
+        mancoverage: 85,
+        zonecoverage: 83,
+        team: "Cowboys"
     }
+    
 ]
 
 cb_list.each do |p|
@@ -702,6 +891,17 @@ ss_list =[
         coverage: 92,
         tackling: 92,
         team: "Giants"
+    },
+    {
+        name: "Donovan Wilson",
+        age: 24,
+        contract: "881,000",
+        position: "SS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3122135.png",
+        speed: 78,
+        coverage: 81,
+        tackling: 78,
+        team: "Cowboys"
     }
 ]
 
@@ -742,6 +942,17 @@ fs_list =[
         coverage: 87,
         tackling: 83,
         team: "Giants"
+    },
+    {
+        name: "Damontae Kazee",
+        age: 30,
+        contract: "1,127,000",
+        position: "FS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976099.png",
+        speed: 82,
+        coverage: 81,
+        tackling: 75,
+        team: "Cowboys"
     }
 ]
 
@@ -777,8 +988,32 @@ Nflteam.create(
     lolb: Lolb.find_by(team: "Giants"),
     rolb: Rolb.find_by(team: "Giants"),
     mlb: Mlb.find_by(team: "Giants"),
-    cb: Cb.find_by(team: "Giants"),
+    cb: Cb.find_by(name: "James Bradberry"),
     cb2: Cb2.find_by(name: "Adoree Jackson"),
     fs: Fs.find_by(team: "Giants"),
     ss: Ss.find_by(team: "Giants")
+)
+
+Nflteam.create(
+    name: "Dallas Cowboys",
+    quarterback: Quarterback.find_by(team: "Cowboys"),
+    runningback: Runningback.find_by(team: "Cowboys"),
+    wide_receiver: WideReceiver.find_by(name: "Amari Cooper"),
+    wr2: Wr2.find_by(name: "Michael Gallup"),
+    tightend: Tightend.find_by(team: "Cowboys"),
+    ltackle: Ltackle.find_by(team: "Cowboys"),
+    rtackle: Rtackle.find_by(team: "Cowboys"),
+    center: Center.find_by(team: "Cowboys"),
+    lguard: Lguard.find_by(team: "Cowboys"),
+    rguard: Rguard.find_by(team: "Cowboys"),
+    leftend: Leftend.find_by(team: "Cowboys"),
+    rightend: Rightend.find_by(team: "Cowboys"),
+    dtackle: Dtackle.find_by(team: "Cowboys"),
+    lolb: Lolb.find_by(team: "Cowboys"),
+    rolb: Rolb.find_by(team: "Cowboys"),
+    mlb: Mlb.find_by(team: "Cowboys"),
+    cb: Cb.find_by(name: "Trevon Diggs"),
+    cb2: Cb2.find_by(name: "Anthony Brown"),
+    fs: Fs.find_by(team: "Cowboys"),
+    ss: Ss.find_by(team: "Cowboys")
 )
