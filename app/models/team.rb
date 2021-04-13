@@ -1,6 +1,6 @@
 class Team < ApplicationRecord
-    has_many :seasons
-    has_many :games, through: :seasons
+    has_many :seasons, dependent: :destroy
+    has_many :games, through: :seasons, dependent: :destroy
     belongs_to :quarterback
     belongs_to :runningback
     belongs_to :user

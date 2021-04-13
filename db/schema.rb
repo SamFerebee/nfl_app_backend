@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_13_002657) do
+ActiveRecord::Schema.define(version: 2021_04_13_060159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,6 +93,10 @@ ActiveRecord::Schema.define(version: 2021_04_13_002657) do
     t.bigint "nflteam_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "week"
+    t.string "nfl_name"
+    t.integer "user_score"
+    t.integer "nfl_score"
     t.index ["nflteam_id"], name: "index_games_on_nflteam_id"
     t.index ["season_id"], name: "index_games_on_season_id"
     t.index ["team_id"], name: "index_games_on_team_id"

@@ -28,4 +28,11 @@ class TeamsController < ApplicationController
        render json: user
     end
 
+    def delete_team
+        user = User.find(params[:user])
+        team = user.teams.find(params[:team])
+        team.destroy
+        render json: user
+    end
+
 end
