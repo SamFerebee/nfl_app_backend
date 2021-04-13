@@ -35,4 +35,12 @@ class TeamsController < ApplicationController
         render json: user
     end
 
+    def change_name
+        ##byebug
+        user = User.find(params[:user])
+        team = user.teams.find(params[:team])
+        team.update(name: params[:name])
+        render json: user
+    end
+
 end

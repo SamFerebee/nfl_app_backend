@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   get "/all_nfl_teams", to: "nflteams#all_teams"
   post "/create_season", to: "seasons#create_season"
   delete "/delete_team/:user/:team", to: "teams#delete_team"
+  patch "/:user/:team/change_name", to: "teams#change_name"
 
   post "/playgame", to: "games#play_game"
 
