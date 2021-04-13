@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :games
   resources :seasons
   resources :cb2s
   resources :wr2s
@@ -37,6 +38,8 @@ Rails.application.routes.draw do
   post "/create_team", to: "teams#create_team"
   get "/all_nfl_teams", to: "nflteams#all_teams"
   post "/create_season", to: "seasons#create_season"
+
+  post "/playgame", to: "games#play_game"
 
   get "/test", to: "quarterbacks#test"
 

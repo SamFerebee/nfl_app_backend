@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    
+
     def authenticate
         auth_header = request.headers["Authorization"]
         token = auth_header.split.last
