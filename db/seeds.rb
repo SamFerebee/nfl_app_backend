@@ -5,7 +5,7 @@ qb_list = [
         name: "Russel Wilson",
         age: 33, 
         contract: "33,000,000",
-        position: "Quarterback",
+        position: "QB",
         accuracy: 89,
         throw_power: 96,
         speed: 91,
@@ -16,7 +16,7 @@ qb_list = [
         name: "Aaron Rodgers",
         age: 38, 
         contract: "37,202,000",
-        position: "Quarterback",
+        position: "QB",
         accuracy: 96,
         throw_power: 94,
         speed: 84,
@@ -27,7 +27,7 @@ qb_list = [
         name: "Daniel Jones",
         age: 24,
         contract: "7,189,000",
-        position: "Quarterback",
+        position: "QB",
         accuracy: 83,
         throw_power: 81,
         speed: 93,
@@ -38,12 +38,23 @@ qb_list = [
         name: "Dak Prescott",
         age: 27,
         contract: "22,200,000",
-        position: "Quarterback",
+        position: "QB",
         accuracy: 92,
         throw_power: 92,
         speed: 90,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/2577417.png",
         team: "DAL"
+    },
+    {
+        name: "Ryan Fitzpatrick",
+        age: 39, 
+        contract: "10,487,000",
+        position: "QB",
+        accuracy: 82,
+        throw_power: 81,
+        speed: 85,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/8664.png",
+        team: "WFT"
     }
 ]
 
@@ -66,7 +77,7 @@ rb_list = [
         name: "Saquon Barkley",
         age: 24, 
         contract: "10,095,000",
-        position: "Runningback",
+        position: "RB",
         elusiveness: 95,
         power: 92,
         speed: 94,
@@ -77,13 +88,24 @@ rb_list = [
         name: "Ezekiel Elliott",
         age: 26, 
         contract: "13,700,000",
-        position: "Runningback",
+        position: "RB",
         elusiveness: 87,
         power: 94,
         speed: 86,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3051392.png&w=350&h=254",
         team: "DAL"
-    }
+    },
+    {
+        name: "Antonio Gibson",
+        age: 23, 
+        contract: "1,121,000",
+        position: "RB",
+        elusiveness: 89,
+        power: 85,
+        speed: 88,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4360294.png",
+        team: "WFT"
+    },
 ]
 
 rb_list.each do |rb|
@@ -105,10 +127,10 @@ wr_list = [
         name: "Julio Jones",
         age: 32,
         contract: "23,000,000",
-        position: "Wide Receiver",
+        position: "WR",
         speed: 95,
         catching: 95,
-        route_running: 89,
+        route_running: 93,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13982.png",
         team: "ATL"
     },
@@ -116,9 +138,9 @@ wr_list = [
         name: "Kenny Golladay",
         age: 28,
         contract: "21,150,000",
-        position: "Wide Receiver",
+        position: "WR",
         speed: 90,
-        catching: 94,
+        catching: 96,
         route_running: 85,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2974858.png",
         team: "NYG" 
@@ -127,7 +149,7 @@ wr_list = [
         name: "Sterling Shepard",
         age: 27,
         contract: "9,000,000",
-        position: "Wide Receiver",
+        position: "WR",
         speed: 83,
         catching: 92,
         route_running: 90,
@@ -138,7 +160,7 @@ wr_list = [
         name: "Amari Cooper",
         age: 27,
         contract: "28,000,000",
-        position: "Wide Receiver",
+        position: "WR",
         speed: 88,
         catching: 93,
         route_running: 93,
@@ -149,12 +171,34 @@ wr_list = [
         name: "Michael Gallup",
         age: 25,
         contract: "2,665,000",
-        position: "Wide Receiver",
+        position: "WR",
         speed: 89,
         catching: 92,
         route_running: 84,
         team: "DAL",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036348.png&w=350&h=254"
+    },
+    {
+        name: "Terry McLaurin",
+        age: 26,
+        contract: "1,105,000",
+        position: "WR",
+        speed: 91,
+        catching: 88,
+        route_running: 90,
+        team: "WFT",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3121422.png"
+    },
+    {
+        name: "Curtis Samuel",
+        age: 25,
+        contract: "3,752,000",
+        position: "WR",
+        speed: 93,
+        catching: 82,
+        route_running: 81,
+        team: "WFT",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3121427.png"
     }
 ]
 
@@ -191,7 +235,7 @@ lt_list = [
         name: "Trent Williams",
         age: 33,
         contract: "23,000,000",
-        position: "Left Tackle",
+        position: "LT",
         strength: 93,
         pass_block: 94,
         run_block: 92,
@@ -202,7 +246,7 @@ lt_list = [
         name: "Nate Solder",
         age: 33,
         contract: "15,600,000",
-        position: "Left Tackle",
+        position: "LT",
         strength: 84,
         pass_block: 79,
         run_block: 79,
@@ -213,13 +257,25 @@ lt_list = [
         name: "Tyron Smith",
         age: 31,
         contract: "15,000,000",
-        position: "Left Tackle",
+        position: "LT",
         strength: 89,
         pass_block: 90,
         run_block: 90,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13978.png&w=350&h=254",
         team: "DAL"
+    },
+    {
+        name: "Corneilius Lucas",
+        age: 30,
+        contract: "2,050,000",
+        position: "LT",
+        strength: 81,
+        pass_block: 81,
+        run_block: 83,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/17202.png",
+        team: "WFT"
     }
+    
 ]
 
 lt_list.each do |lt| 
@@ -241,7 +297,7 @@ rt_list = [
         name: "Mitchell Schwartz",
         age: 31,
         contract: "8,300,000",
-        position: "Right Tackle",
+        position: "RT",
         strength: 89,
         pass_block: 96,
         run_block: 90,
@@ -252,7 +308,7 @@ rt_list = [
         name: "Matt Peart",
         age: 24,
         contract: "1,088,000",
-        position: "Right Tackle",
+        position: "RT",
         strength: 79,
         pass_block: 75,
         run_block: 75,
@@ -263,12 +319,23 @@ rt_list = [
         name: "La'el Collins",
         age: 28,
         contract: "6,800,000",
-        position: "Right Tackle",
+        position: "RT",
         strength: 85,
         pass_block: 84,
         run_block: 83,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2577302.png&w=350&h=254",
         team: "DAL"
+    },
+    {
+        name: "Morgan Moses",
+        age: 28,
+        contract: "9,650,000",
+        position: "RT",
+        strength: 87,
+        pass_block: 85,
+        run_block: 84,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/17202.png",
+        team: "WFT"
     }
 ]
 
@@ -291,7 +358,7 @@ center_list = [
         name: "Jason Kelce",
         age: 34,
         contract: "8,000,000",
-        position: "Center",
+        position: "C",
         strength: 85,
         pass_block: 93,
         run_block: 89,
@@ -302,7 +369,7 @@ center_list = [
         name: "Nick Gates",
         age: 26,
         contract: "3,325,000",
-        position: "Center",
+        position: "C",
         strength: 82,
         pass_block: 81,
         run_block: 79,
@@ -313,12 +380,23 @@ center_list = [
         name: "Tyler Biadasz",
         age: 23,
         contract: "903,000",
-        position: "Center",
+        position: "C",
         strength: 82,
         pass_block: 81,
         run_block: 79,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/4035788.png",
         team: "DAL"
+    },
+    {
+        name: "Chase Roullier",
+        age: 28,
+        contract: "4,560,000",
+        position: "C",
+        strength: 85,
+        pass_block: 84,
+        run_block: 84,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976182.png",
+        team: "WFT"
     }
 ]
 
@@ -342,7 +420,7 @@ lg_list = [
         name: "Quenton Nelson",
         age: 25,
         contract: "7,700,000",
-        position: "Left Guard",
+        position: "LG",
         strength: 96,
         pass_block: 91,
         run_block: 96,
@@ -353,7 +431,7 @@ lg_list = [
         name: "Shane Lemieux",
         age: 23,
         contract: "910,000",
-        position: "Left Guard",
+        position: "LG",
         strength: 77,
         pass_block: 76,
         run_block: 74,
@@ -364,12 +442,23 @@ lg_list = [
         name: "Connor Williams",
         age: 24,
         contract: "2,960,000",
-        position: "Left Guard",
+        position: "LG",
         strength: 84,
         pass_block: 83,
         run_block: 85,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3821577.png",
         team: "DAL"
+    },
+    {
+        name: "Wes Schweitzer",
+        age: 28,
+        contract: "5,000,000",
+        position: "LG",
+        strength: 84,
+        pass_block: 87,
+        run_block: 81,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2581273.png&w=350&h=254",
+        team: "WFT"
     }
 ]
 
@@ -393,8 +482,8 @@ rg_list = [
         name: "Zack Martin",
         age: 31,
         contract: "19,000,000",
-        position: "Right Guard",
-        strength: 92,
+        position: "RG",
+        strength: 95,
         pass_block: 93,
         run_block: 96,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16709.png",
@@ -404,12 +493,23 @@ rg_list = [
         name: "Zach Fulton",
         age: 30,
         contract: "987,500",
-        position: "Right Guard",
+        position: "RG",
         strength: 78,
         pass_block: 76,
         run_block: 75,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16923.png",
         team: "NYG"
+    },
+    {
+        name: "Brandon Scherff",
+        age: 29,
+        contract: "18,036,000",
+        position: "RG",
+        strength: 94,
+        pass_block: 92,
+        run_block: 95,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2511708.png",
+        team: "WFT"
     }
 ]
 
@@ -433,7 +533,7 @@ tightend_list = [
         name: "Travis Kelce",
         age: 32,
         contract: "11,200,000",
-        position: "Tight End",
+        position: "TE",
         speed: 91,
         blocking: 94,
         catching: 97,
@@ -444,7 +544,7 @@ tightend_list = [
         name: "Evan Engram",
         age: 27,
         contract: "6,013,000",
-        position: "Tight End",
+        position: "TE",
         speed: 94,
         blocking: 77,
         catching: 81,
@@ -455,12 +555,23 @@ tightend_list = [
         name: "Blake Jarwin",
         age: 27,
         contract: "4,544,000",
-        position: "Tight End",
+        position: "TE",
         speed: 82,
         blocking: 83,
         catching: 84,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2991767.png",
         team: "DAL"
+    },
+    {
+        name: "Logan Thomas",
+        age: 30,
+        contract: "3,610,000",
+        position: "TE",
+        speed: 84,
+        blocking: 79,
+        catching: 86,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16813.png",
+        team: "WFT"
     }
 
 ]
@@ -484,7 +595,7 @@ leftend_list =[
       name: "J.J. Watt",
       age: 32,
       contract: "4,900,000",
-      position: "Left End",
+      position: "LE",
       image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13979.png",
       strength: 92,
       passrush: 86,
@@ -495,7 +606,7 @@ leftend_list =[
         name: "Dexter Lawrence",
         age: 24,
         contract: "3,613,000",
-        position: "Left End",
+        position: "LE",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4035483.png",
         strength: 88,
         passrush: 82,
@@ -506,12 +617,23 @@ leftend_list =[
         name: "DeMarcus Lawrence",
         age: 29,
         contract: "25,000,000",
-        position: "Left End",
+        position: "LE",
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/16802.png",
         strength: 91,
         passrush: 94,
         runstuff: 92,
         team: "DAL"
+    },
+    {
+        name: "Chase Young",
+        age: 22,
+        contract: "7,855,000",
+        position: "LE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241986.png&w=350&h=254",
+        strength: 90,
+        passrush: 92,
+        runstuff: 87,
+        team: "WFT"
     }
 ]
 
@@ -535,7 +657,7 @@ rightend_list =[
       name: "Myles Garret",
       age: 25,
       contract: "11,000,000",
-      position: "Right End",
+      position: "RE",
       image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3122132.png",
       strength: 96,
       passrush: 95,
@@ -546,7 +668,7 @@ rightend_list =[
        name: "Leonard Williams",
        age: 27,
        contract: "25,500,000",
-       position: "Right End",
+       position: "RE",
        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2971622.png",
        strength: 93,
        passrush: 89,
@@ -557,12 +679,23 @@ rightend_list =[
         name: "Randy Gregory",
         age: 29,
         contract: "2,200,000",
-        position: "Right End",
+        position: "RE",
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/13988.png",
         strength: 83,
         passrush: 85,
         runstuff: 79,
         team: "DAL" 
+    },
+    {
+        name: "Montez Sweat",
+        age: 25,
+        contract: "3,174,000",
+        position: "RE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3134690.png",
+        strength: 84,
+        passrush: 86,
+        runstuff: 81,
+        team: "WFT" 
     }
 ]
 
@@ -585,7 +718,7 @@ dtackle_list =[
       name: "Aaron Donald",
       age: 30,
       contract: "26,100,000",
-      position: "Defensive Tackle",
+      position: "DT",
       image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16716.png&w=350&h=254",
       strength: 99,
       passrush: 99,
@@ -596,23 +729,34 @@ dtackle_list =[
         name: "Danny Shelton",
         age: 28,
         contract: "987,000",
-        position: "Defensive Tackle",
+        position: "DT",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2578384.png",
         strength: 79,
         passrush: 72,
-        runstuff: 74,
+        runstuff: 79,
         team: "NYG"
     },
     {
         name: "Trysten Hill",
         age: 23,
-        contract: "1,328,000",
-        position: "Defensive Tackle",
+        contract: "780,900",
+        position: "DT",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4042141.png",
         strength: 83,
         passrush: 77,
         runstuff: 78,
         team: "DAL"
+    },
+    {
+        name: "Jonathan Allen",
+        age: 26,
+        contract: "10,051,000",
+        position: "DT",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3054840.png",
+        strength: 90,
+        passrush: 82,
+        runstuff: 90,
+        team: "WFT"
     }
 ]
 
@@ -634,10 +778,10 @@ lolb_list =[
     {
       name: "T.J. Watt",
       age: 27,
-      contract: "11,089,000",
+      contract: "27,089,000",
       position: "LOLB",
       image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3045282.png",
-      strength: 88,
+      strength: 90,
       passrush: 97,
       speed: 94,
       team: "PIT"  
@@ -650,7 +794,7 @@ lolb_list =[
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/4038811.png",
         strength: 82,
         passrush: 84,
-        speed: 79,
+        speed: 81,
         team: "NYG"
     },
     {
@@ -659,10 +803,21 @@ lolb_list =[
         contract: "11,800,000",
         position: "LOLB",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3052896.png",
-        strength: 88,
+        strength: 89,
         passrush: 86,
         speed: 92,
         team: "DAL"
+    },
+    {
+        name: "Josh Harvey Clemmons",
+        age: 27,
+        contract: "1,011,000",
+        position: "LOLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2977645.png",
+        strength: 79,
+        passrush: 78,
+        speed: 80,
+        team: "WFT"
     }
 ]
 
@@ -714,6 +869,17 @@ rolb_list =[
         passrush: 81,
         speed: 82,
         team: "DAL"
+    },
+    {
+        name: "Tarrel Basham",
+        age: 25,
+        contract: "907,000",
+        position: "ROLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116689.png",
+        strength: 76,
+        passrush: 75,
+        speed: 78,
+        team: "WFT"
     }
 ]
 
@@ -750,7 +916,7 @@ mlb_list =[
         position: "MLB",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2978273.png",
         speed: 87,
-        tackling: 91,
+        tackling: 93,
         coverage: 86,
         team: "NYG"
     },
@@ -764,6 +930,17 @@ mlb_list =[
         tackling: 94,
         coverage: 90,
         team: "DAL"
+    },
+    {
+        name: "Jon Bostic",
+        age: 30,
+        contract: "3,565,000",
+        position: "MLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15827.png&w=350&h=254",
+        speed: 82,
+        tackling: 87,
+        coverage: 82,
+        team: "WFT"
     }
 ]
 
@@ -837,6 +1014,28 @@ cb_list =[
         mancoverage: 85,
         zonecoverage: 83,
         team: "DAL"
+    },
+    {
+        name: "Kendall Fuller",
+        age: 26,
+        contract: "13,125,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3045465.png",
+        speed: 86,
+        mancoverage: 87,
+        zonecoverage: 83,
+        team: "WFT"
+    },
+    {
+        name: "William Jackson III",
+        age: 29,
+        contract: "4,617,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3061106.png&w=350&h=254",
+        speed: 89,
+        mancoverage: 85,
+        zonecoverage: 82,
+        team: "WFT"
     }
     
 ]
@@ -902,6 +1101,17 @@ ss_list =[
         coverage: 81,
         tackling: 78,
         team: "DAL"
+    },
+    {
+        name: "Landon Collins",
+        age: 27,
+        contract: "16,905,000",
+        position: "SS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2979841.png",
+        speed: 89,
+        coverage: 80,
+        tackling: 95,
+        team: "WFT"
     }
 ]
 
@@ -953,6 +1163,17 @@ fs_list =[
         coverage: 81,
         tackling: 75,
         team: "DAL"
+    },
+    {
+        name: "Deshazor Everett",
+        age: 29,
+        contract: "1,826,000",
+        position: "FS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2578692.png",
+        speed: 79,
+        coverage: 81,
+        tackling: 75,
+        team: "WFT"
     }
 ]
 
@@ -1016,4 +1237,29 @@ Nflteam.create(
     cb2: Cb2.find_by(name: "Anthony Brown"),
     fs: Fs.find_by(team: "DAL"),
     ss: Ss.find_by(team: "DAL")
+)
+
+                   
+Nflteam.create(
+    name: "Washington Football Team",
+    quarterback: Quarterback.find_by(team: "WFT"),
+    runningback: Runningback.find_by(team: "WFT"),
+    wide_receiver: WideReceiver.find_by(name: "Terry McLaurin"),
+    wr2: Wr2.find_by(name: "Curtis Samuel"),
+    tightend: Tightend.find_by(team: "WFT"),
+    ltackle: Ltackle.find_by(team: "WFT"),
+    rtackle: Rtackle.find_by(team: "WFT"),
+    center: Center.find_by(team: "WFT"),
+    lguard: Lguard.find_by(team: "WFT"),
+    rguard: Rguard.find_by(team: "WFT"),
+    leftend: Leftend.find_by(team: "WFT"),
+    rightend: Rightend.find_by(team: "WFT"),
+    dtackle: Dtackle.find_by(team: "WFT"),
+    lolb: Lolb.find_by(team: "WFT"),
+    rolb: Rolb.find_by(team: "WFT"),
+    mlb: Mlb.find_by(team: "WFT"),
+    cb: Cb.find_by(name: "Kendall Fuller"),
+    cb2: Cb2.find_by(name: "William Jackson III"),
+    fs: Fs.find_by(team: "WFT"),
+    ss: Ss.find_by(team: "WFT")
 )
