@@ -871,7 +871,7 @@ rolb_list =[
         team: "DAL"
     },
     {
-        name: "Tarrel Basham",
+        name: "Cole Holcomb",
         age: 25,
         contract: "907,000",
         position: "ROLB",

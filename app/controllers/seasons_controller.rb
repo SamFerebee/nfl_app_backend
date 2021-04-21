@@ -6,10 +6,10 @@ class SeasonsController < ApplicationController
         season = Season.create(team: team, wins: 0, losses: 0, current_week: 1)
         Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "Dallas Cowboys"), nfl_name: "Dallas Cowboys", week: 1, played: false)
         Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "New York Giants"),  nfl_name: "New York Giants", week: 2, played: false)
-        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "Dallas Cowboys"),  nfl_name: "Dallas Cowboys", week: 3, played: false)
-        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "New York Giants"),  nfl_name: "New York Giants", week: 4, played: false)
-        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "Dallas Cowboys"),  nfl_name: "Dallas Cowboys", week: 5, played: false)
-        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "New York Giants"),  nfl_name: "New York Giants", week: 6, played: false)
+        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "Dallas Cowboys"),  nfl_name: "Washington Football Team", week: 3, played: false)
+        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "New York Giants"),  nfl_name: "Dallas Cowboys", week: 4, played: false)
+        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "Dallas Cowboys"),  nfl_name: "New York Giants", week: 5, played: false)
+        Game.create(season: season, team: team, nflteam: Nflteam.find_by(name: "New York Giants"),  nfl_name: "Washington Football Team", week: 6, played: false)
         render json: user
     end
 

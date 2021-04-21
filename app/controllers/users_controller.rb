@@ -36,8 +36,11 @@ class UsersController < ApplicationController
     end
 
     def edit_account
-        if(params[:name])
+        if(params[:name] != "")
             @user.update(username: params[:name])
+        end
+        if(params[:email] != "")
+            @user.update(email: params[:email])
         end
         render json: @user
     end

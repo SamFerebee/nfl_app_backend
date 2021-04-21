@@ -64,7 +64,7 @@ class GamesController < ApplicationController
             game.update(user_score: 21, nfl_score: 24)
             game.update(played: true)
             losses = 1 + season.losses
-            season.update(wins: losses)
+            season.update(losses: losses)
         end
         week = season.current_week + 1;
         season.update(current_week: week)
