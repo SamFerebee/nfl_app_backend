@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
 
     def create_team
         abbreviation =(params[:abbreviation])
+        logo = (params[:logo])
        user = User.find(params[:user])
        qb = Quarterback.find_by(name: params[:quarterback])
        rb = Runningback.find_by(name: params[:runningback])
@@ -25,7 +26,7 @@ class TeamsController < ApplicationController
        cb2 = Cb2.find_by(name: params[:cb2])
        fs = Fs.find_by(name: params[:fs])
        ss = Ss.find_by(name: params[:ss])
-       team = Team.create(user: user, abbreviation: abbreviation, name: params[:teamName], quarterback: qb, runningback: rb, wide_receiver: wr, wr2: wr2, ltackle: lt, rtackle: rt, center: c, rguard: rg, lguard: lg, tightend: te, leftend: le, rightend: re, dtackle: dt, lolb: lolb, rolb: rolb, mlb: mlb, cb: cb, cb2: cb2, fs: fs, ss: ss)
+       team = Team.create(user: user, logo: logo, abbreviation: abbreviation, name: params[:teamName], quarterback: qb, runningback: rb, wide_receiver: wr, wr2: wr2, ltackle: lt, rtackle: rt, center: c, rguard: rg, lguard: lg, tightend: te, leftend: le, rightend: re, dtackle: dt, lolb: lolb, rolb: rolb, mlb: mlb, cb: cb, cb2: cb2, fs: fs, ss: ss)
        render json: user
     end
 

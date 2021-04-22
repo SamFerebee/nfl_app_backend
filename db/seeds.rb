@@ -1193,6 +1193,7 @@ end
 
 Nflteam.create(
     name: "New York Giants",
+    logo: "https://cdn.freebiesupply.com/images/large/2x/new-york-giants-logo-transparent.png",
     abbreviation: "NYG",
     quarterback: Quarterback.find_by(team: "NYG"),
     runningback: Runningback.find_by(team: "NYG"),
@@ -1218,6 +1219,7 @@ Nflteam.create(
                    
 Nflteam.create(
     name: "Dallas Cowboys",
+    logo: "https://1000logos.net/wp-content/uploads/2016/12/Dallas-Cowboys-Logo-500x313.png",
     abbreviation: "DAL",
     quarterback: Quarterback.find_by(team: "DAL"),
     runningback: Runningback.find_by(team: "DAL"),
@@ -1244,6 +1246,7 @@ Nflteam.create(
                    
 Nflteam.create(
     name: "Washington Football Team",
+    logo: "https://lh3.googleusercontent.com/proxy/W0nm5ZZuPMUEcGfX5_r0S90zNnOM-wVB14ii2PObtXH4To8TrP9xdynaTiSRExy4THnlRJjL4vprZ76u_pZxiLl-5RdsOugrWxURVHzRcyVLt36SbbSRYc6sbxpmONdASr-Cr71hN2Axr3iujw",
     abbreviation: "WFT",
     quarterback: Quarterback.find_by(team: "WFT"),
     runningback: Runningback.find_by(team: "WFT"),

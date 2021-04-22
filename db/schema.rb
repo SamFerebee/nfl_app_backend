@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_22_000516) do
+ActiveRecord::Schema.define(version: 2021_04_22_020045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,6 +97,11 @@ ActiveRecord::Schema.define(version: 2021_04_22_000516) do
     t.string "nfl_name"
     t.integer "user_score"
     t.integer "nfl_score"
+    t.string "opplogo"
+    t.string "nflabbreviation"
+    t.integer "nfl_overall"
+    t.integer "nfl_offense"
+    t.integer "nfl_defense"
     t.index ["nflteam_id"], name: "index_games_on_nflteam_id"
     t.index ["season_id"], name: "index_games_on_season_id"
     t.index ["team_id"], name: "index_games_on_team_id"
@@ -197,6 +202,7 @@ ActiveRecord::Schema.define(version: 2021_04_22_000516) do
     t.bigint "cb2_id", null: false
     t.bigint "wr2_id", null: false
     t.string "abbreviation"
+    t.string "logo"
     t.index ["cb2_id"], name: "index_nflteams_on_cb2_id"
     t.index ["cb_id"], name: "index_nflteams_on_cb_id"
     t.index ["center_id"], name: "index_nflteams_on_center_id"
@@ -355,6 +361,7 @@ ActiveRecord::Schema.define(version: 2021_04_22_000516) do
     t.bigint "cb2_id", null: false
     t.bigint "wr2_id", null: false
     t.string "abbreviation"
+    t.string "logo"
     t.index ["cb2_id"], name: "index_teams_on_cb2_id"
     t.index ["cb_id"], name: "index_teams_on_cb_id"
     t.index ["center_id"], name: "index_teams_on_center_id"

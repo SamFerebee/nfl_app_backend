@@ -6,4 +6,5 @@ class Game < ApplicationRecord
   def nflteam_name
     self.nflteam.name
   end
+
 end
