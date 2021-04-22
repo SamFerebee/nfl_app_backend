@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_19_184739) do
+ActiveRecord::Schema.define(version: 2021_04_22_000516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -196,6 +196,7 @@ ActiveRecord::Schema.define(version: 2021_04_19_184739) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "cb2_id", null: false
     t.bigint "wr2_id", null: false
+    t.string "abbreviation"
     t.index ["cb2_id"], name: "index_nflteams_on_cb2_id"
     t.index ["cb_id"], name: "index_nflteams_on_cb_id"
     t.index ["center_id"], name: "index_nflteams_on_center_id"
@@ -353,6 +354,7 @@ ActiveRecord::Schema.define(version: 2021_04_19_184739) do
     t.bigint "ss_id", null: false
     t.bigint "cb2_id", null: false
     t.bigint "wr2_id", null: false
+    t.string "abbreviation"
     t.index ["cb2_id"], name: "index_teams_on_cb2_id"
     t.index ["cb_id"], name: "index_teams_on_cb_id"
     t.index ["center_id"], name: "index_teams_on_center_id"

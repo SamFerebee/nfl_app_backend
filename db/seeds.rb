@@ -1193,6 +1193,7 @@ end
 
 Nflteam.create(
     name: "New York Giants",
+    abbreviation: "NYG",
     quarterback: Quarterback.find_by(team: "NYG"),
     runningback: Runningback.find_by(team: "NYG"),
     wide_receiver: WideReceiver.find_by(name: "Kenny Golladay"),
@@ -1217,6 +1218,7 @@ Nflteam.create(
                    
 Nflteam.create(
     name: "Dallas Cowboys",
+    abbreviation: "DAL",
     quarterback: Quarterback.find_by(team: "DAL"),
     runningback: Runningback.find_by(team: "DAL"),
     wide_receiver: WideReceiver.find_by(name: "Amari Cooper"),
@@ -1242,6 +1244,7 @@ Nflteam.create(
                    
 Nflteam.create(
     name: "Washington Football Team",
+    abbreviation: "WFT",
     quarterback: Quarterback.find_by(team: "WFT"),
     runningback: Runningback.find_by(team: "WFT"),
     wide_receiver: WideReceiver.find_by(name: "Terry McLaurin"),
