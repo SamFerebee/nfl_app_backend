@@ -17,9 +17,9 @@ qb_list = [
         age: 38, 
         contract: "37,202,000",
         position: "QB",
-        accuracy: 96,
-        throw_power: 94,
-        speed: 84,
+        accuracy: 98,
+        throw_power: 96,
+        speed: 86,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8439.png",
         team: "GB"
     },
@@ -55,6 +55,39 @@ qb_list = [
         speed: 85,
         image: "https://a.espncdn.com/i/headshots/nfl/players/full/8664.png",
         team: "WFT"
+    },
+    {
+        name: "Jalen Hurts",
+        age: 23, 
+        contract: "2,340,000",
+        position: "QB",
+        accuracy: 84,
+        throw_power: 82,
+        speed: 83,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040715.png",
+        team: "PHI"
+    },
+    {
+        name: "Patrick Mahomes",
+        age: 26, 
+        contract: "44,340,000",
+        position: "QB",
+        accuracy: 96,
+        throw_power: 99,
+        speed: 90,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png",
+        team: "KC"
+    },
+    {
+        name: "Tom Brady",
+        age: 44, 
+        contract: "21,510,000",
+        position: "QB",
+        accuracy: 92,
+        throw_power: 85,
+        speed: 70,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2330.png",
+        team: "TB"
     }
 ]
 
@@ -106,6 +139,39 @@ rb_list = [
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4360294.png",
         team: "WFT"
     },
+    {
+        name: "Miles Sanders",
+        age: 24, 
+        contract: "2,100,000",
+        position: "RB",
+        elusiveness: 93,
+        power: 83,
+        speed: 89,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/4045163.png",
+        team: "PHI"
+    },
+    {
+        name: "Clyde Edwards-Helaire",
+        age: 22, 
+        contract: "2,459,000",
+        position: "RB",
+        elusiveness: 90,
+        power: 81,
+        speed: 87,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4242214.png",
+        team: "KC"
+    },
+    {
+        name: "Leonard Fournette",
+        age: 26, 
+        contract: "3,250,000",
+        position: "RB",
+        elusiveness: 81,
+        power: 92,
+        speed: 87,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3115364.png",
+        team: "TB"
+    }
 ]
 
 rb_list.each do |rb|
@@ -199,6 +265,72 @@ wr_list = [
         route_running: 81,
         team: "WFT",
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3121427.png"
+    },
+    {
+        name: "Jalen Reagor",
+        age: 22,
+        contract: "3,016,000",
+        position: "WR",
+        speed: 84,
+        catching: 81,
+        route_running: 81,
+        team: "PHI",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/4373673.png"
+    },
+    {
+        name: "Travis Fulgham",
+        age: 26,
+        contract: "850,000",
+        position: "WR",
+        speed: 79,
+        catching: 81,
+        route_running: 77,
+        team: "PHI",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3139522.png"
+    },
+    {
+        name: "Tyreek Hill",
+        age: 27,
+        contract: "17,087,500",
+        position: "WR",
+        speed: 99,
+        catching: 92,
+        route_running: 92,
+        team: "KC",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116406.png"
+    },
+    {
+        name: "Demarcus Robinson",
+        age: 27,
+        contract: "987,500",
+        position: "WR",
+        speed: 78,
+        catching: 86,
+        route_running: 83,
+        team: "KC",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3043116.png"
+    },
+    {
+        name: "Mike Evans",
+        age: 28,
+        contract: "18,587,500",
+        position: "WR",
+        speed: 92,
+        catching: 94,
+        route_running: 89,
+        team: "TB",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/16737.png"
+    },
+    {
+        name: "Chris Godwin",
+        age: 25,
+        contract: "15,983,500",
+        position: "WR",
+        speed: 88,
+        catching: 95,
+        route_running: 92,
+        team: "TB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116165.png&w=350&h=254"
     }
 ]
 
@@ -274,6 +406,39 @@ lt_list = [
         run_block: 83,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/17202.png",
         team: "WFT"
+    },
+    {
+        name: "Andre Dillard",
+        age: 26,
+        contract: "3,373,000",
+        position: "LT",
+        strength: 84,
+        pass_block: 83,
+        run_block: 81,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3127264.png",
+        team: "PHI"
+    },
+    {
+        name: "Martinas Rankin",
+        age: 27,
+        contract: "920,000",
+        position: "LT",
+        strength: 78,
+        pass_block: 76,
+        run_block: 77,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3894924.png",
+        team: "KC"
+    },
+    {
+        name: "Donovan Smith",
+        age: 28,
+        contract: "16,710,000",
+        position: "LT",
+        strength: 89,
+        pass_block: 92,
+        run_block: 90,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2582147.png&w=350&h=254",
+        team: "TB"
     }
     
 ]
@@ -336,6 +501,28 @@ rt_list = [
         run_block: 84,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/17202.png",
         team: "WFT"
+    },
+    {
+        name: "Lane Johnson",
+        age: 31,
+        contract: "17,848,000",
+        position: "RT",
+        strength: 93,
+        pass_block: 95,
+        run_block: 92,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/15797.png",
+        team: "PHI"
+    },
+    {
+        name: "Tristen Wirfs",
+        age: 2,
+        contract: "4,248,000",
+        position: "RT",
+        strength: 89,
+        pass_block: 87,
+        run_block: 88,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4240589.png",
+        team: "TB"
     }
 ]
 
@@ -397,6 +584,28 @@ center_list = [
         run_block: 84,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976182.png",
         team: "WFT"
+    },
+    {
+        name: "Austin Blythe",
+        age: 29,
+        contract: "990,000",
+        position: "C",
+        strength: 81,
+        pass_block: 78,
+        run_block: 79,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2582448.png",
+        team: "KC"
+    },
+    {
+        name: "Ryan Jensen",
+        age: 30,
+        contract: "10,000,000",
+        position: "C",
+        strength: 90,
+        pass_block: 92,
+        run_block: 91,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/2573103.png",
+        team: "TB"
     }
 ]
 
@@ -459,6 +668,39 @@ lg_list = [
         run_block: 81,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2581273.png&w=350&h=254",
         team: "WFT"
+    },
+    {
+        name: "Isaac Seumalo",
+        age: 28,
+        contract: "3,008,000",
+        position: "LG",
+        strength: 84,
+        pass_block: 79,
+        run_block: 83,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2978247.png",
+        team: "PHI"
+    },
+    {
+        name: "Joe Thuney",
+        age: 29,
+        contract: "17,800,000",
+        position: "LG",
+        strength: 93,
+        pass_block: 89,
+        run_block: 94,
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/2577773.png",
+        team: "KC"
+    },
+    {
+        name: "Ali Marpet",
+        age: 28,
+        contract: "12,025,000",
+        position: "LG",
+        strength: 90,
+        pass_block: 88,
+        run_block: 92,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3165702.png",
+        team: "TB"
     }
 ]
 
@@ -510,6 +752,39 @@ rg_list = [
         run_block: 95,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2511708.png",
         team: "WFT"
+    },
+    {
+        name: "Brandon Brooks",
+        age: 32,
+        contract: "7,014,000",
+        position: "RG",
+        strength: 92,
+        pass_block: 89,
+        run_block: 92,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14962.png",
+        team: "PHI"
+    },
+    {
+        name: "Laurent Duvernay-Tardif",
+        age: 30,
+        contract: "4,750,000",
+        position: "RG",
+        strength: 85,
+        pass_block: 84,
+        run_block: 86,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16958.png",
+        team: "KC"
+    },
+    {
+        name: "Alex Cappa",
+        age: 26,
+        contract: "2,381,000",
+        position: "RG",
+        strength: 83,
+        pass_block: 82,
+        run_block: 85,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3059021.png",
+        team: "TB"
     }
 ]
 
@@ -572,6 +847,28 @@ tightend_list = [
         catching: 86,
         image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16813.png",
         team: "WFT"
+    },
+    {
+        name: "Zach Ertz",
+        age: 31,
+        contract: "12,721,000",
+        position: "TE",
+        speed: 90,
+        blocking: 84,
+        catching: 97,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15835.png",
+        team: "PHI"
+    },
+    {
+        name: "Rob Gronkowski",
+        age: 32,
+        contract: "3,000,000",
+        position: "TE",
+        speed: 80,
+        blocking: 95,
+        catching: 92,
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13229.png",
+        team: "TB"
     }
 
 ]
@@ -634,6 +931,39 @@ leftend_list =[
         passrush: 92,
         runstuff: 87,
         team: "WFT"
+    },
+    {
+        name: "Derek Barnett",
+        age: 25,
+        contract: "10,051,000",
+        position: "LE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3115336.png&w=350&h=254",
+        strength: 86,
+        passrush: 87,
+        runstuff: 85,
+        team: "PHI"
+    },
+    {
+        name: "Tim Ward",
+        age: 24,
+        contract: "695,000",
+        position: "LE",
+        image: "https://s.yimg.com/it/api/res/1.2/Obb7JPteAseIfwZ.tQ71cA--~A/YXBwaWQ9eW5ld3M7dz0zMDA7aD0yMDA7cT0xMDA-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/10012020/32351.png",
+        strength: 75,
+        passrush: 76,
+        runstuff: 74,
+        team: "KC"
+    },
+    {
+        name: "Ndamukong Suh",
+        age: 34,
+        contract: "6,000,000",
+        position: "LE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13234.png",
+        strength: 95,
+        passrush: 87,
+        runstuff: 92,
+        team: "TB"
     }
 ]
 
@@ -656,7 +986,7 @@ rightend_list =[
     {
       name: "Myles Garret",
       age: 25,
-      contract: "11,000,000",
+      contract: "26,000,000",
       position: "RE",
       image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3122132.png",
       strength: 96,
@@ -696,6 +1026,39 @@ rightend_list =[
         passrush: 86,
         runstuff: 81,
         team: "WFT" 
+    },
+    {
+        name: "Brandon Graham",
+        age: 33,
+        contract: "7,988,000",
+        position: "RE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13239.png&w=350&h=254",
+        strength: 90,
+        passrush: 89,
+        runstuff: 87,
+        team: "PHI" 
+    },
+    {
+        name: "Frank Clark",
+        age: 28,
+        contract: "25,800,000",
+        position: "RE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2576242.png",
+        strength: 92,
+        passrush: 94,
+        runstuff: 90,
+        team: "KC" 
+    },
+    {
+        name: "William Gholston",
+        age: 30,
+        contract: "5,500,000",
+        position: "RE",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16019.png&w=350&h=254",
+        strength: 85,
+        passrush: 84,
+        runstuff: 88,
+        team: "TB" 
     }
 ]
 
@@ -757,6 +1120,39 @@ dtackle_list =[
         passrush: 82,
         runstuff: 90,
         team: "WFT"
+    },
+    {
+        name: "Fletcher Cox",
+        age: 31,
+        contract: "23,880,000",
+        position: "DT",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14941.png",
+        strength: 95,
+        passrush: 92,
+        runstuff: 97,
+        team: "PHI"
+    },
+    {
+        name: "Chris Jones",
+        age: 27,
+        contract: "22,150,000",
+        position: "DT",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3044859.png",
+        strength: 94,
+        passrush: 97,
+        runstuff: 93,
+        team: "KC"
+    },
+    {
+        name: "Vita Vea",
+        age: 26,
+        contract: "7,050,000",
+        position: "DT",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3134362.png",
+        strength: 97,
+        passrush: 80,
+        runstuff: 95,
+        team: "TB"
     }
 ]
 
@@ -818,6 +1214,39 @@ lolb_list =[
         passrush: 78,
         speed: 80,
         team: "WFT"
+    },
+    {
+        name: "Shaun Bradley",
+        age: 24,
+        contract: "780,000",
+        position: "LOLB",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/4038902.png",
+        strength: 75,
+        passrush: 78,
+        speed: 76,
+        team: "PHI"
+    },
+    {
+        name: "Willie Gay",
+        age: 23,
+        contract: "1,935,000",
+        position: "LOLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4259804.png",
+        strength: 81,
+        passrush: 86,
+        speed: 85,
+        team: "KC"
+    },
+    {
+        name: "Shaquil Barrett",
+        age: 29,
+        contract: "19,500,000",
+        position: "LOLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16967.png",
+        strength: 87,
+        passrush: 93,
+        speed: 90,
+        team: "TB"
     }
 ]
 
@@ -880,6 +1309,39 @@ rolb_list =[
         passrush: 75,
         speed: 78,
         team: "WFT"
+    },
+    {
+        name: "Alex Singleton",
+        age: 28,
+        contract: "850,000",
+        position: "ROLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2612151.png&w=350&h=254",
+        strength: 78,
+        passrush: 77,
+        speed: 76,
+        team: "PHI"
+    },
+    {
+        name: "Dorian O'Daniel",
+        age: 26,
+        contract: "761,000",
+        position: "ROLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3045132.png",
+        strength: 76,
+        passrush: 80,
+        speed: 77,
+        team: "KC"
+    },
+    {
+        name: "Jason Pierre-Paul",
+        age: 32,
+        contract: "12,800,000",
+        position: "ROLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13256.png",
+        strength: 84,
+        passrush: 90,
+        speed: 88,
+        team: "TB"
     }
 ]
 
@@ -941,6 +1403,39 @@ mlb_list =[
         tackling: 87,
         coverage: 82,
         team: "WFT"
+    },
+    {
+        name: "Eric Wilson",
+        age: 27,
+        contract: "1,378,000",
+        position: "MLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3056916.png",
+        speed: 84,
+        tackling: 83,
+        coverage: 81,
+        team: "PHI"
+    },
+    {
+        name: "Anthony Hitchens",
+        age: 29,
+        contract: "10,635,000",
+        position: "MLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16883.png",
+        speed: 87,
+        tackling: 89,
+        coverage: 86,
+        team: "KC"
+    },
+    {
+        name: "Devin White",
+        age: 23,
+        contract: "8,170,000",
+        position: "MLB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4035434.png",
+        speed: 92,
+        tackling: 87,
+        coverage: 87,
+        team: "TB"
     }
 ]
 
@@ -1036,6 +1531,72 @@ cb_list =[
         mancoverage: 85,
         zonecoverage: 82,
         team: "WFT"
+    },
+    {
+        name: "Darius Slay",
+        age: 30,
+        contract: "17,000,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15863.png&w=350&h=254",
+        speed: 92,
+        mancoverage: 94,
+        zonecoverage: 87,
+        team: "PHI"
+    },
+    {
+        name: "Avonte Maddox",
+        age: 25,
+        contract: "2,339,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3123938.png",
+        speed: 82,
+        mancoverage: 77,
+        zonecoverage: 76,
+        team: "PHI"
+    },
+    {
+        name: "L'Jarius Sneed",
+        age: 24,
+        contract: "889,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040432.png",
+        speed: 83,
+        mancoverage: 78,
+        zonecoverage: 74,
+        team: "KC"
+    },
+    {
+        name: "Charvarius Ward",
+        age: 25,
+        contract: "3,384,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4037361.png",
+        speed: 87,
+        mancoverage: 86,
+        zonecoverage: 86,
+        team: "KC"
+    },
+    {
+        name: "Carlton Davis",
+        age: 24,
+        contract: "2,751,000",
+        position: "CB",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3916923.png&w=350&h=254",
+        speed: 85,
+        mancoverage: 84,
+        zonecoverage: 83,
+        team: "TB"
+    },
+    {
+        name: "Sean Murphy-Bunting",
+        age: 24,
+        contract: "2,011,000",
+        position: "CB",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3932886.png",
+        speed: 85,
+        mancoverage: 83,
+        zonecoverage: 85,
+        team: "TB"
     }
     
 ]
@@ -1112,6 +1673,28 @@ ss_list =[
         coverage: 80,
         tackling: 95,
         team: "WFT"
+    },
+    {
+        name: "Rodney McLeod",
+        age: 31,
+        contract: "1,760,000",
+        position: "SS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15222.png",
+        speed: 81,
+        coverage: 77,
+        tackling: 84,
+        team: "PHI"
+    },
+    {
+        name: "Antoine Winfield Jr.",
+        age: 23,
+        contract: "1,660,000",
+        position: "SS",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/4034790.png",
+        speed: 83,
+        coverage: 79,
+        tackling: 83,
+        team: "TB"
     }
 ]
 
@@ -1174,6 +1757,39 @@ fs_list =[
         coverage: 81,
         tackling: 75,
         team: "WFT"
+    },
+    {
+        name: "Anthony Harris",
+        age: 30,
+        contract: "1,592,000",
+        position: "FS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2577814.png",
+        speed: 81,
+        coverage: 83,
+        tackling: 78,
+        team: "PHI"
+    },
+    {
+        name: "Juan Thornhill",
+        age: 26,
+        contract: "1,258,000",
+        position: "FS",
+        image: "https://a.espncdn.com/i/headshots/nfl/players/full/3122136.png",
+        speed: 84,
+        coverage: 85,
+        tackling: 81,
+        team: "KC"
+    },
+    {
+        name: "Jordan Whitehead",
+        age: 24,
+        contract: "667,,000",
+        position: "FS",
+        image: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3895798.png",
+        speed: 81,
+        coverage: 80,
+        tackling: 78,
+        team: "TB"
     }
 ]
 
@@ -1268,4 +1884,82 @@ Nflteam.create(
     cb2: Cb2.find_by(name: "William Jackson III"),
     fs: Fs.find_by(team: "WFT"),
     ss: Ss.find_by(team: "WFT")
+)
+
+Nflteam.create(
+    name: "Philadelphia Eagles",
+    logo: "http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2b4b.png",
+    abbreviation: "PHI",
+    quarterback: Quarterback.find_by(team: "PHI"),
+    runningback: Runningback.find_by(team: "PHI"),
+    wide_receiver: WideReceiver.find_by(name: "Jalen Reagor"),
+    wr2: Wr2.find_by(name: "Travis Fulgham"),
+    tightend: Tightend.find_by(team: "PHI"),
+    ltackle: Ltackle.find_by(team: "PHI"),
+    rtackle: Rtackle.find_by(team: "PHI"),
+    center: Center.find_by(team: "PHI"),
+    lguard: Lguard.find_by(team: "PHI"),
+    rguard: Rguard.find_by(team: "PHI"),
+    leftend: Leftend.find_by(team: "PHI"),
+    rightend: Rightend.find_by(team: "PHI"),
+    dtackle: Dtackle.find_by(team: "PHI"),
+    lolb: Lolb.find_by(team: "PHI"),
+    rolb: Rolb.find_by(team: "PHI"),
+    mlb: Mlb.find_by(team: "PHI"),
+    cb: Cb.find_by(name: "Darius Slay"),
+    cb2: Cb2.find_by(name: "Avonte Maddox"),
+    fs: Fs.find_by(team: "PHI"),
+    ss: Ss.find_by(team: "PHI")
+)
+
+Nflteam.create(
+    name: "Kansas City Chiefs",
+    logo: "https://i.pinimg.com/originals/f3/e4/1e/f3e41e005561504736db1477f7186f08.png",
+    abbreviation: "KC",
+    quarterback: Quarterback.find_by(team: "KC"),
+    runningback: Runningback.find_by(team: "KC"),
+    wide_receiver: WideReceiver.find_by(name: "Tyreek Hill"),
+    wr2: Wr2.find_by(name: "Demarcus Robinson"),
+    tightend: Tightend.find_by(team: "KC"),
+    ltackle: Ltackle.find_by(team: "KC"),
+    rtackle: Rtackle.find_by(team: "KC"),
+    center: Center.find_by(team: "KC"),
+    lguard: Lguard.find_by(team: "KC"),
+    rguard: Rguard.find_by(team: "KC"),
+    leftend: Leftend.find_by(team: "KC"),
+    rightend: Rightend.find_by(team: "KC"),
+    dtackle: Dtackle.find_by(team: "KC"),
+    lolb: Lolb.find_by(team: "KC"),
+    rolb: Rolb.find_by(team: "KC"),
+    mlb: Mlb.find_by(team: "KC"),
+    cb: Cb.find_by(name: "L'Jarius Sneed"),
+    cb2: Cb2.find_by(name: "Charvarius Ward"),
+    fs: Fs.find_by(team: "KC"),
+    ss: Ss.find_by(team: "KC")
+)
+
+Nflteam.create(
+    name: "Tampa Bay Buccaneers",
+    logo: "https://logodownload.org/wp-content/uploads/2020/09/tampa-bay-buccaneers-logo.png",
+    abbreviation: "TB",
+    quarterback: Quarterback.find_by(team: "TB"),
+    runningback: Runningback.find_by(team: "TB"),
+    wide_receiver: WideReceiver.find_by(name: "Mike Evans"),
+    wr2: Wr2.find_by(name: "Chris Godwin"),
+    tightend: Tightend.find_by(team: "TB"),
+    ltackle: Ltackle.find_by(team: "TB"),
+    rtackle: Rtackle.find_by(team: "TB"),
+    center: Center.find_by(team: "TB"),
+    lguard: Lguard.find_by(team: "TB"),
+    rguard: Rguard.find_by(team: "TB"),
+    leftend: Leftend.find_by(team: "TB"),
+    rightend: Rightend.find_by(team: "TB"),
+    dtackle: Dtackle.find_by(team: "TB"),
+    lolb: Lolb.find_by(team: "TB"),
+    rolb: Rolb.find_by(team: "TB"),
+    mlb: Mlb.find_by(team: "TB"),
+    cb: Cb.find_by(name: "Carlton Davis"),
+    cb2: Cb2.find_by(name: "Sean Murphy-Bunting"),
+    fs: Fs.find_by(team: "TB"),
+    ss: Ss.find_by(team: "TB")
 )

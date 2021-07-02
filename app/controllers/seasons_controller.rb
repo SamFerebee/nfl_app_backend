@@ -10,11 +10,11 @@ class SeasonsController < ApplicationController
         Game.create(season: season, team: team, opplogo: nteam.logo, nflteam: nteam,  nfl_name: nteam.name, nflabbreviation: nteam.abbreviation, week: 2, played: false, nfl_overall: nteam.overall_rating, nfl_offense: nteam.offense_rating, nfl_defense: nteam.defense_rating)
         nteam = Nflteam.find_by(name: "Washington Football Team")
         Game.create(season: season, team: team, opplogo: nteam.logo, nflteam: nteam,  nfl_name: nteam.name, nflabbreviation: nteam.abbreviation, week: 3, played: false, nfl_overall: nteam.overall_rating, nfl_offense: nteam.offense_rating, nfl_defense: nteam.defense_rating)
-        nteam = Nflteam.find_by(name: "Dallas Cowboys")
+        nteam = Nflteam.find_by(name: "Philadelphia Eagles")
         Game.create(season: season, team: team, opplogo: nteam.logo, nflteam: nteam,  nfl_name: nteam.name, nflabbreviation: nteam.abbreviation, week: 4, played: false, nfl_overall: nteam.overall_rating, nfl_offense: nteam.offense_rating, nfl_defense: nteam.defense_rating)
-        nteam = Nflteam.find_by(name: "New York Giants")
+        nteam = Nflteam.find_by(name: "Kansas City Chiefs")
         Game.create(season: season, team: team, opplogo: nteam.logo, nflteam: nteam,  nfl_name: nteam.name, nflabbreviation: nteam.abbreviation, week: 5, played: false, nfl_overall: nteam.overall_rating, nfl_offense: nteam.offense_rating, nfl_defense: nteam.defense_rating)
-        nteam = Nflteam.find_by(name: "Washington Football Team")
+        nteam = Nflteam.find_by(name: "Tampa Bay Buccaneers")
         Game.create(season: season, team: team, opplogo: nteam.logo, nflteam: nteam,  nfl_name: nteam.name, nflabbreviation: nteam.abbreviation, week: 6, played: false, nfl_overall: nteam.overall_rating, nfl_offense: nteam.offense_rating, nfl_defense: nteam.defense_rating)
         render json: user
     end

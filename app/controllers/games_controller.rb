@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
 
     def play_game
-        diceroll = rand(12)
+        diceroll = rand(15)
         user = User.find(params[:user])
         season = user.seasons.find(params[:season])
         game = season.games.find(params[:game])
@@ -65,6 +65,21 @@ class GamesController < ApplicationController
             game.update(played: true)
             losses = 1 + season.losses
             season.update(losses: losses)
+        elsif diceroll == 12
+            game.update(user_score: 27, nfl_score: 14)
+            game.update(played: true)
+            wins = 1 + season.wins
+            season.update(wins: wins)
+        elsif diceroll == 13
+            game.update(user_score: 17, nfl_score: 13)
+            game.update(played: true)
+            wins = 1 + season.wins
+            season.update(wins: wins)
+        elsif diceroll == 14
+            game.update(user_score: 31, nfl_score: 21)
+            game.update(played: true)
+            wins = 1 + season.wins
+            season.update(wins: wins)
         end
         week = season.current_week + 1;
         season.update(current_week: week)
@@ -72,3 +87,6 @@ class GamesController < ApplicationController
     end
 
 end
+
+
+##contiue to improve algo

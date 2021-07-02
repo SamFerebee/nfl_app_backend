@@ -37,6 +37,13 @@ class Team < ApplicationRecord
         (offense_rating + defense_rating) / 2
     end
 
-
+    def star_players
+        allPlayers = [self.quarterback, self.wide_receiver, self.wr2, self.runningback, self.ltackle, self. lguard, self.center, self.rguard, self.rtackle, self.tightend, self.rightend, self.dtackle, self.leftend, self.rolb, self.lolb, self.mlb, self.cb, self.cb2, self.fs, self.ss]
+        sorted = allPlayers.sort_by do |player|
+            player.overall
+        end
+        sorted.reverse!()
+        sorted.slice(0,3)
+    end
 
 end
